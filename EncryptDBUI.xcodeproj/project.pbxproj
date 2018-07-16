@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FC3DBD920FC309700DD48C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DBD820FC309700DD48C0 /* AppDelegate.swift */; };
+		2FC3DBDB20FC309700DD48C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DBDA20FC309700DD48C0 /* ViewController.swift */; };
+		2FC3DBDD20FC309800DD48C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC3DBDC20FC309800DD48C0 /* Assets.xcassets */; };
+		2FC3DBE020FC309800DD48C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC3DBDE20FC309800DD48C0 /* Main.storyboard */; };
+		2FC3DBEC20FC309800DD48C0 /* EncryptDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DBEB20FC309800DD48C0 /* EncryptDBUITests.swift */; };
+		2FC3DBF720FC309800DD48C0 /* EncryptDBUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DBF620FC309800DD48C0 /* EncryptDBUIUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FC3DBE820FC309800DD48C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FC3DBCD20FC309700DD48C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FC3DBD420FC309700DD48C0;
+			remoteInfo = EncryptDBUI;
+		};
+		2FC3DBF320FC309800DD48C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FC3DBCD20FC309700DD48C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FC3DBD420FC309700DD48C0;
+			remoteInfo = EncryptDBUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FC3DBD520FC309700DD48C0 /* EncryptDBUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncryptDBUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC3DBD820FC309700DD48C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FC3DBDA20FC309700DD48C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2FC3DBDC20FC309800DD48C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FC3DBDF20FC309800DD48C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FC3DBE120FC309800DD48C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FC3DBE220FC309800DD48C0 /* EncryptDBUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EncryptDBUI.entitlements; sourceTree = "<group>"; };
+		2FC3DBE720FC309800DD48C0 /* EncryptDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncryptDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC3DBEB20FC309800DD48C0 /* EncryptDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptDBUITests.swift; sourceTree = "<group>"; };
+		2FC3DBED20FC309800DD48C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FC3DBF220FC309800DD48C0 /* EncryptDBUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncryptDBUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC3DBF620FC309800DD48C0 /* EncryptDBUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptDBUIUITests.swift; sourceTree = "<group>"; };
+		2FC3DBF820FC309800DD48C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FC3DBD220FC309700DD48C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FC3DBE420FC309800DD48C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FC3DBEF20FC309800DD48C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FC3DBCC20FC309700DD48C0 = {
+			isa = PBXGroup;
+			children = (
+				2FC3DBD720FC309700DD48C0 /* EncryptDBUI */,
+				2FC3DBEA20FC309800DD48C0 /* EncryptDBUITests */,
+				2FC3DBF520FC309800DD48C0 /* EncryptDBUIUITests */,
+				2FC3DBD620FC309700DD48C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FC3DBD620FC309700DD48C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3DBD520FC309700DD48C0 /* EncryptDBUI.app */,
+				2FC3DBE720FC309800DD48C0 /* EncryptDBUITests.xctest */,
+				2FC3DBF220FC309800DD48C0 /* EncryptDBUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FC3DBD720FC309700DD48C0 /* EncryptDBUI */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3DBD820FC309700DD48C0 /* AppDelegate.swift */,
+				2FC3DBDA20FC309700DD48C0 /* ViewController.swift */,
+				2FC3DBDC20FC309800DD48C0 /* Assets.xcassets */,
+				2FC3DBDE20FC309800DD48C0 /* Main.storyboard */,
+				2FC3DBE120FC309800DD48C0 /* Info.plist */,
+				2FC3DBE220FC309800DD48C0 /* EncryptDBUI.entitlements */,
+			);
+			path = EncryptDBUI;
+			sourceTree = "<group>";
+		};
+		2FC3DBEA20FC309800DD48C0 /* EncryptDBUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3DBEB20FC309800DD48C0 /* EncryptDBUITests.swift */,
+				2FC3DBED20FC309800DD48C0 /* Info.plist */,
+			);
+			path = EncryptDBUITests;
+			sourceTree = "<group>";
+		};
+		2FC3DBF520FC309800DD48C0 /* EncryptDBUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3DBF620FC309800DD48C0 /* EncryptDBUIUITests.swift */,
+				2FC3DBF820FC309800DD48C0 /* Info.plist */,
+			);
+			path = EncryptDBUIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FC3DBD420FC309700DD48C0 /* EncryptDBUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FC3DBFB20FC309800DD48C0 /* Build configuration list for PBXNativeTarget "EncryptDBUI" */;
+			buildPhases = (
+				2FC3DBD120FC309700DD48C0 /* Sources */,
+				2FC3DBD220FC309700DD48C0 /* Frameworks */,
+				2FC3DBD320FC309700DD48C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EncryptDBUI;
+			productName = EncryptDBUI;
+			productReference = 2FC3DBD520FC309700DD48C0 /* EncryptDBUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2FC3DBE620FC309800DD48C0 /* EncryptDBUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FC3DBFE20FC309800DD48C0 /* Build configuration list for PBXNativeTarget "EncryptDBUITests" */;
+			buildPhases = (
+				2FC3DBE320FC309800DD48C0 /* Sources */,
+				2FC3DBE420FC309800DD48C0 /* Frameworks */,
+				2FC3DBE520FC309800DD48C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FC3DBE920FC309800DD48C0 /* PBXTargetDependency */,
+			);
+			name = EncryptDBUITests;
+			productName = EncryptDBUITests;
+			productReference = 2FC3DBE720FC309800DD48C0 /* EncryptDBUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2FC3DBF120FC309800DD48C0 /* EncryptDBUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FC3DC0120FC309800DD48C0 /* Build configuration list for PBXNativeTarget "EncryptDBUIUITests" */;
+			buildPhases = (
+				2FC3DBEE20FC309800DD48C0 /* Sources */,
+				2FC3DBEF20FC309800DD48C0 /* Frameworks */,
+				2FC3DBF020FC309800DD48C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FC3DBF420FC309800DD48C0 /* PBXTargetDependency */,
+			);
+			name = EncryptDBUIUITests;
+			productName = EncryptDBUIUITests;
+			productReference = 2FC3DBF220FC309800DD48C0 /* EncryptDBUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FC3DBCD20FC309700DD48C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = sungrow;
+				TargetAttributes = {
+					2FC3DBD420FC309700DD48C0 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					2FC3DBE620FC309800DD48C0 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 2FC3DBD420FC309700DD48C0;
+					};
+					2FC3DBF120FC309800DD48C0 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 2FC3DBD420FC309700DD48C0;
+					};
+				};
+			};
+			buildConfigurationList = 2FC3DBD020FC309700DD48C0 /* Build configuration list for PBXProject "EncryptDBUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FC3DBCC20FC309700DD48C0;
+			productRefGroup = 2FC3DBD620FC309700DD48C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FC3DBD420FC309700DD48C0 /* EncryptDBUI */,
+				2FC3DBE620FC309800DD48C0 /* EncryptDBUITests */,
+				2FC3DBF120FC309800DD48C0 /* EncryptDBUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FC3DBD320FC309700DD48C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC3DBDD20FC309800DD48C0 /* Assets.xcassets in Resources */,
+				2FC3DBE020FC309800DD48C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FC3DBE520FC309800DD48C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FC3DBF020FC309800DD48C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FC3DBD120FC309700DD48C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC3DBDB20FC309700DD48C0 /* ViewController.swift in Sources */,
+				2FC3DBD920FC309700DD48C0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FC3DBE320FC309800DD48C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC3DBEC20FC309800DD48C0 /* EncryptDBUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FC3DBEE20FC309800DD48C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC3DBF720FC309800DD48C0 /* EncryptDBUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FC3DBE920FC309800DD48C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FC3DBD420FC309700DD48C0 /* EncryptDBUI */;
+			targetProxy = 2FC3DBE820FC309800DD48C0 /* PBXContainerItemProxy */;
+		};
+		2FC3DBF420FC309800DD48C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FC3DBD420FC309700DD48C0 /* EncryptDBUI */;
+			targetProxy = 2FC3DBF320FC309800DD48C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2FC3DBDE20FC309800DD48C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FC3DBDF20FC309800DD48C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FC3DBF920FC309800DD48C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FC3DBFA20FC309800DD48C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2FC3DBFC20FC309800DD48C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EncryptDBUI/EncryptDBUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EncryptDBUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.EncryptDBUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2FC3DBFD20FC309800DD48C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EncryptDBUI/EncryptDBUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EncryptDBUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.EncryptDBUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		2FC3DBFF20FC309800DD48C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EncryptDBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.EncryptDBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EncryptDBUI.app/Contents/MacOS/EncryptDBUI";
+			};
+			name = Debug;
+		};
+		2FC3DC0020FC309800DD48C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EncryptDBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.EncryptDBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EncryptDBUI.app/Contents/MacOS/EncryptDBUI";
+			};
+			name = Release;
+		};
+		2FC3DC0220FC309800DD48C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EncryptDBUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.EncryptDBUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = EncryptDBUI;
+			};
+			name = Debug;
+		};
+		2FC3DC0320FC309800DD48C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EncryptDBUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.EncryptDBUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = EncryptDBUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FC3DBD020FC309700DD48C0 /* Build configuration list for PBXProject "EncryptDBUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC3DBF920FC309800DD48C0 /* Debug */,
+				2FC3DBFA20FC309800DD48C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FC3DBFB20FC309800DD48C0 /* Build configuration list for PBXNativeTarget "EncryptDBUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC3DBFC20FC309800DD48C0 /* Debug */,
+				2FC3DBFD20FC309800DD48C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FC3DBFE20FC309800DD48C0 /* Build configuration list for PBXNativeTarget "EncryptDBUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC3DBFF20FC309800DD48C0 /* Debug */,
+				2FC3DC0020FC309800DD48C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FC3DC0120FC309800DD48C0 /* Build configuration list for PBXNativeTarget "EncryptDBUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC3DC0220FC309800DD48C0 /* Debug */,
+				2FC3DC0320FC309800DD48C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FC3DBCD20FC309700DD48C0 /* Project object */;
+}
