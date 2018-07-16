@@ -26,15 +26,19 @@ class ViewController: NSViewController {
         }
     }
     
+    @IBAction func rePicker(_ sender: NSButton) {
+        reloadDefaultData()
+    }
+    
     @IBAction func encrypt(_ sender: NSButton) {
         guard let model = currentFileModel else {
             return
         }
         let isSuccess = FMEncryptHelper.encryptDatabase(model.filePath, encryptKey: encryptKeyTF.stringValue)
         if isSuccess {
-            dragDropView.text = "加密成功"
+            dragDropView.text = model.fileName + " " + "加密成功"
         } else {
-            dragDropView.text = "加密失败"
+            dragDropView.text = model.fileName + " " + "加密失败"
         }
     }
     
@@ -44,9 +48,9 @@ class ViewController: NSViewController {
         }
         let isSuccess = FMEncryptHelper.unEncryptDatabase(model.filePath, encryptKey: encryptKeyTF.stringValue)
         if isSuccess {
-            dragDropView.text = "解密成功"
+            dragDropView.text = model.fileName + " " + "解密成功"
         } else {
-            dragDropView.text = "解密失败"
+            dragDropView.text = model.fileName + " " + "解密失败"
         }
     }
 }
