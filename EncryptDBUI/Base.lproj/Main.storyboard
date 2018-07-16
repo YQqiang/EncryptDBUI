@@ -738,17 +738,17 @@
                                     </button>
                                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ljM-JJ-JoV">
                                         <rect key="frame" x="72" y="69" width="136" height="22"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="输入加解密key" drawsBackground="YES" id="dfZ-Cw-TOu">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="输入加解密key" drawsBackground="YES" id="dfZ-Cw-TOu">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nfr-Ip-wKQ">
-                                        <rect key="frame" x="211" y="290" width="67" height="32"/>
-                                        <buttonCell key="cell" type="push" title="重选" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="dgf-1O-6Uf">
+                                        <rect key="frame" x="184" y="290" width="94" height="32"/>
+                                        <buttonCell key="cell" type="push" title="清空重选" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="dgf-1O-6Uf">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                                         </buttonCell>
                                         <connections>
                                             <action selector="rePicker:" target="XfG-lQ-9wD" id="aPF-gs-xgx"/>
@@ -777,7 +777,7 @@
                                         <color key="value" red="0.50588235290000005" green="0.78823529410000004" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="addDB"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="拖入数据库到这里"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="拖拽数据库到这里"/>
                                 </userDefinedRuntimeAttributes>
                             </customView>
                         </subviews>
