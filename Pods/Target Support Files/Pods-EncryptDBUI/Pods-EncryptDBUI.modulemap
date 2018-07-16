@@ -1,0 +1,6 @@
+framework module Pods_EncryptDBUI {
+  umbrella header "Pods-EncryptDBUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
