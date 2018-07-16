@@ -16,6 +16,11 @@
 		2FC3DC0C20FC319C00DD48C0 /* FMEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DC0520FC319C00DD48C0 /* FMEncryptHelper.m */; };
 		2FC3DC0D20FC319C00DD48C0 /* FMEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DC0720FC319C00DD48C0 /* FMEncryptDatabaseQueue.m */; };
 		2FC3DC0E20FC319C00DD48C0 /* FMEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DC0820FC319C00DD48C0 /* FMEncryptDatabase.m */; };
+		2FC3DC1320FC343000DD48C0 /* YQDragDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DC1120FC343000DD48C0 /* YQDragDropView.swift */; };
+		2FC3DC1420FC343000DD48C0 /* YQGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DC1220FC343000DD48C0 /* YQGradientView.swift */; };
+		2FC3DC1620FC357D00DD48C0 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DC1520FC357D00DD48C0 /* MainWindow.swift */; };
+		2FC3DC1A20FC394E00DD48C0 /* EnumeratorFileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DC1820FC394E00DD48C0 /* EnumeratorFileProtocol.swift */; };
+		2FC3DC1B20FC394E00DD48C0 /* YQFileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DC1920FC394E00DD48C0 /* YQFileModel.swift */; };
 		486C31E3C33954D3B6186A65 /* Pods_EncryptDBUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B79D410472044C8FE904EF4 /* Pods_EncryptDBUIUITests.framework */; };
 		FAD38B1F72B78C16B6DEE946 /* Pods_EncryptDBUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977AA627FC1DC90436FDBDC1 /* Pods_EncryptDBUI.framework */; };
 		FB7B0C118374BDD62E358F6E /* Pods_EncryptDBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B03B39E322E15DEF481562 /* Pods_EncryptDBUITests.framework */; };
@@ -63,6 +68,11 @@
 		2FC3DC0A20FC319C00DD48C0 /* FMEncryptDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptDatabase.h; sourceTree = "<group>"; };
 		2FC3DC0B20FC319C00DD48C0 /* FMEncryptDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptDatabaseQueue.h; sourceTree = "<group>"; };
 		2FC3DC0F20FC31BE00DD48C0 /* EncryptDBUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EncryptDBUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		2FC3DC1120FC343000DD48C0 /* YQDragDropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQDragDropView.swift; sourceTree = "<group>"; };
+		2FC3DC1220FC343000DD48C0 /* YQGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQGradientView.swift; sourceTree = "<group>"; };
+		2FC3DC1520FC357D00DD48C0 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
+		2FC3DC1820FC394E00DD48C0 /* EnumeratorFileProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumeratorFileProtocol.swift; sourceTree = "<group>"; };
+		2FC3DC1920FC394E00DD48C0 /* YQFileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQFileModel.swift; sourceTree = "<group>"; };
 		52B03B39E322E15DEF481562 /* Pods_EncryptDBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncryptDBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7208A172D2281B3B3B610401 /* Pods-EncryptDBUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptDBUIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EncryptDBUIUITests/Pods-EncryptDBUIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		76F672CA8B081CA3A0899CED /* Pods-EncryptDBUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptDBUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-EncryptDBUI/Pods-EncryptDBUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +136,7 @@
 			children = (
 				2FC3DC0420FC319C00DD48C0 /* EncryptFMDB */,
 				2FC3DBD820FC309700DD48C0 /* AppDelegate.swift */,
+				2FC3DC1520FC357D00DD48C0 /* MainWindow.swift */,
 				2FC3DBDA20FC309700DD48C0 /* ViewController.swift */,
 				2FC3DBDC20FC309800DD48C0 /* Assets.xcassets */,
 				2FC3DBDE20FC309800DD48C0 /* Main.storyboard */,
@@ -157,6 +168,8 @@
 		2FC3DC0420FC319C00DD48C0 /* EncryptFMDB */ = {
 			isa = PBXGroup;
 			children = (
+				2FC3DC1720FC392700DD48C0 /* Model */,
+				2FC3DC1020FC340D00DD48C0 /* View */,
 				2FC3DC0520FC319C00DD48C0 /* FMEncryptHelper.m */,
 				2FC3DC0620FC319C00DD48C0 /* ColumnPropertyMappingDelegate.h */,
 				2FC3DC0720FC319C00DD48C0 /* FMEncryptDatabaseQueue.m */,
@@ -166,6 +179,24 @@
 				2FC3DC0B20FC319C00DD48C0 /* FMEncryptDatabaseQueue.h */,
 			);
 			path = EncryptFMDB;
+			sourceTree = "<group>";
+		};
+		2FC3DC1020FC340D00DD48C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3DC1120FC343000DD48C0 /* YQDragDropView.swift */,
+				2FC3DC1220FC343000DD48C0 /* YQGradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FC3DC1720FC392700DD48C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3DC1820FC394E00DD48C0 /* EnumeratorFileProtocol.swift */,
+				2FC3DC1920FC394E00DD48C0 /* YQFileModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7B0ED926105A1EF89B9C31DC /* Pods */ = {
@@ -263,6 +294,11 @@
 				TargetAttributes = {
 					2FC3DBD420FC309700DD48C0 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					2FC3DBE620FC309800DD48C0 = {
 						CreatedOnToolsVersion = 9.4;
@@ -402,11 +438,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FC3DC1A20FC394E00DD48C0 /* EnumeratorFileProtocol.swift in Sources */,
+				2FC3DC1620FC357D00DD48C0 /* MainWindow.swift in Sources */,
 				2FC3DBDB20FC309700DD48C0 /* ViewController.swift in Sources */,
 				2FC3DC0D20FC319C00DD48C0 /* FMEncryptDatabaseQueue.m in Sources */,
 				2FC3DBD920FC309700DD48C0 /* AppDelegate.swift in Sources */,
+				2FC3DC1B20FC394E00DD48C0 /* YQFileModel.swift in Sources */,
 				2FC3DC0E20FC319C00DD48C0 /* FMEncryptDatabase.m in Sources */,
 				2FC3DC0C20FC319C00DD48C0 /* FMEncryptHelper.m in Sources */,
+				2FC3DC1320FC343000DD48C0 /* YQDragDropView.swift in Sources */,
+				2FC3DC1420FC343000DD48C0 /* YQGradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +612,6 @@
 			baseConfigurationReference = C6B229A3ADF3984BC31C12F4 /* Pods-EncryptDBUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = EncryptDBUI/EncryptDBUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = EncryptDBUI/Info.plist;
@@ -591,7 +631,6 @@
 			baseConfigurationReference = 76F672CA8B081CA3A0899CED /* Pods-EncryptDBUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = EncryptDBUI/EncryptDBUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = EncryptDBUI/Info.plist;
