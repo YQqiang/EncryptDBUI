@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -706,11 +707,56 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="EncryptDBUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="320"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="HcJ-lW-BNF" customClass="YQDragDropView" customModule="EncryptDBUI" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="320"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="COU-C7-jck">
+                                        <rect key="frame" x="148" y="30" width="64" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="Fq1-k1-nej"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="roundTextured" title="解密" bezelStyle="texturedRounded" alignment="center" borderStyle="border" inset="2" id="soL-rN-TpV">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="decrypt:" target="XfG-lQ-9wD" id="6U7-Ef-Q3F"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tdh-Z2-Cxu">
+                                        <rect key="frame" x="68" y="30" width="64" height="25"/>
+                                        <buttonCell key="cell" type="roundTextured" title="加密" bezelStyle="texturedRounded" alignment="center" borderStyle="border" inset="2" id="Lac-Gd-h8T">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="encrypt:" target="XfG-lQ-9wD" id="tQE-UY-7BO"/>
+                                        </connections>
+                                    </button>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ljM-JJ-JoV">
+                                        <rect key="frame" x="72" y="70" width="136" height="22"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="输入加解密key" drawsBackground="YES" id="dfZ-Cw-TOu">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ljM-JJ-JoV" firstAttribute="leading" secondItem="Tdh-Z2-Cxu" secondAttribute="leading" constant="4" id="2RV-Pf-D3m"/>
+                                    <constraint firstItem="COU-C7-jck" firstAttribute="top" secondItem="ljM-JJ-JoV" secondAttribute="bottom" constant="16" id="8c0-a9-0Yy"/>
+                                    <constraint firstItem="ljM-JJ-JoV" firstAttribute="trailing" secondItem="COU-C7-jck" secondAttribute="trailing" constant="-4" id="9Kh-bL-gx7"/>
+                                    <constraint firstItem="Tdh-Z2-Cxu" firstAttribute="centerY" secondItem="COU-C7-jck" secondAttribute="centerY" id="ATk-Sp-zSA"/>
+                                    <constraint firstAttribute="bottom" secondItem="COU-C7-jck" secondAttribute="bottom" constant="32" id="BHw-oG-vqE"/>
+                                    <constraint firstAttribute="centerX" secondItem="Tdh-Z2-Cxu" secondAttribute="trailing" constant="8" id="JJP-Ah-h14"/>
+                                    <constraint firstAttribute="height" constant="320" id="VZp-Ow-ozW"/>
+                                    <constraint firstItem="COU-C7-jck" firstAttribute="leading" secondItem="HcJ-lW-BNF" secondAttribute="centerX" constant="8" id="brM-4n-7Fa"/>
+                                    <constraint firstItem="Tdh-Z2-Cxu" firstAttribute="width" secondItem="COU-C7-jck" secondAttribute="width" id="cN5-xO-jsQ"/>
+                                    <constraint firstAttribute="width" constant="280" id="zfj-pd-3jF"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="lowGradientColor">
                                         <color key="value" red="0.50588235294117645" green="0.78823529411764703" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -732,6 +778,7 @@
                     </view>
                     <connections>
                         <outlet property="dragDropView" destination="HcJ-lW-BNF" id="XCc-M3-2SE"/>
+                        <outlet property="encryptKeyTF" destination="ljM-JJ-JoV" id="Zz0-uv-uwW"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
