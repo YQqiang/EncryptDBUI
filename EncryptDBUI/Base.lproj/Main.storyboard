@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -620,7 +620,7 @@
                                         <menuItem title="Show Sidebar" keyEquivalent="s" id="kIP-vf-haE">
                                             <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
                                             <connections>
-                                                <action selector="toggleSourceList:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
+                                                <action selector="toggleSidebar:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Enter Full Screen" keyEquivalent="f" id="4J7-dP-txa">
@@ -685,7 +685,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" customClass="MainWindow" customModule="EncryptDBUI" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="EncryptDBUI" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
+                    <window key="window" title="EncryptDBUI" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -695,7 +695,7 @@
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="k6N-i4-qck" kind="relationship" relationship="window.shadowedContentViewController" id="khO-PU-SlR"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -707,67 +707,104 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="EncryptDBUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="280" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="360"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="HcJ-lW-BNF" customClass="YQDragDropView" customModule="EncryptDBUI" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="280" height="320"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="360"/>
                                 <subviews>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="COU-C7-jck">
-                                        <rect key="frame" x="142" y="25" width="76" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="64" id="Fq1-k1-nej"/>
-                                        </constraints>
-                                        <buttonCell key="cell" type="push" title="解密" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="soL-rN-TpV">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="decrypt:" target="XfG-lQ-9wD" id="6U7-Ef-Q3F"/>
-                                        </connections>
-                                    </button>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tdh-Z2-Cxu">
-                                        <rect key="frame" x="62" y="25" width="76" height="32"/>
-                                        <buttonCell key="cell" type="push" title="加密" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="Lac-Gd-h8T">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="encrypt:" target="XfG-lQ-9wD" id="tQE-UY-7BO"/>
-                                        </connections>
-                                    </button>
-                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ljM-JJ-JoV">
-                                        <rect key="frame" x="72" y="69" width="136" height="22"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="输入加解密key" drawsBackground="YES" id="dfZ-Cw-TOu">
-                                            <font key="font" metaFont="system"/>
-                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nfr-Ip-wKQ">
-                                        <rect key="frame" x="184" y="290" width="94" height="32"/>
-                                        <buttonCell key="cell" type="push" title="清空重选" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="dgf-1O-6Uf">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="rePicker:" target="XfG-lQ-9wD" id="aPF-gs-xgx"/>
-                                        </connections>
-                                    </button>
+                                    <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="16" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iDm-xC-zwK">
+                                        <rect key="frame" x="74" y="32" width="172" height="96"/>
+                                        <subviews>
+                                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ljM-JJ-JoV">
+                                                <rect key="frame" x="18" y="74" width="136" height="22"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="输入加解密key" drawsBackground="YES" id="dfZ-Cw-TOu">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="os4-mv-51G">
+                                                <rect key="frame" x="27" y="37" width="118" height="21"/>
+                                                <subviews>
+                                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="COU-C7-jck">
+                                                        <rect key="frame" x="-6" y="-7" width="67" height="32"/>
+                                                        <buttonCell key="cell" type="push" title="解密" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="soL-rN-TpV">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="decrypt:" target="XfG-lQ-9wD" id="6U7-Ef-Q3F"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tdh-Z2-Cxu">
+                                                        <rect key="frame" x="57" y="-7" width="67" height="32"/>
+                                                        <buttonCell key="cell" type="push" title="加密" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="Lac-Gd-h8T">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="encrypt:" target="XfG-lQ-9wD" id="tQE-UY-7BO"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <visibilityPriorities>
+                                                    <integer value="1000"/>
+                                                    <integer value="1000"/>
+                                                </visibilityPriorities>
+                                                <customSpacing>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                </customSpacing>
+                                            </stackView>
+                                            <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rbw-DN-aX9">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="21"/>
+                                                <subviews>
+                                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nfr-Ip-wKQ">
+                                                        <rect key="frame" x="-6" y="-7" width="94" height="32"/>
+                                                        <buttonCell key="cell" type="push" title="清空重选" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="dgf-1O-6Uf">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="rePicker:" target="XfG-lQ-9wD" id="aPF-gs-xgx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="I0u-N3-OBo">
+                                                        <rect key="frame" x="84" y="-7" width="94" height="32"/>
+                                                        <buttonCell key="cell" type="push" title="保存密码" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="CCr-kg-zef">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                                        </buttonCell>
+                                                    </button>
+                                                </subviews>
+                                                <visibilityPriorities>
+                                                    <integer value="1000"/>
+                                                    <integer value="1000"/>
+                                                </visibilityPriorities>
+                                                <customSpacing>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                </customSpacing>
+                                            </stackView>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="ljM-JJ-JoV" firstAttribute="leading" secondItem="Tdh-Z2-Cxu" secondAttribute="leading" constant="4" id="2RV-Pf-D3m"/>
-                                    <constraint firstAttribute="trailing" secondItem="nfr-Ip-wKQ" secondAttribute="trailing" constant="8" id="7sj-Vc-afq"/>
-                                    <constraint firstItem="COU-C7-jck" firstAttribute="top" secondItem="ljM-JJ-JoV" secondAttribute="bottom" constant="16" id="8c0-a9-0Yy"/>
-                                    <constraint firstItem="ljM-JJ-JoV" firstAttribute="trailing" secondItem="COU-C7-jck" secondAttribute="trailing" constant="-4" id="9Kh-bL-gx7"/>
-                                    <constraint firstItem="Tdh-Z2-Cxu" firstAttribute="centerY" secondItem="COU-C7-jck" secondAttribute="centerY" id="ATk-Sp-zSA"/>
-                                    <constraint firstAttribute="bottom" secondItem="COU-C7-jck" secondAttribute="bottom" constant="32" id="BHw-oG-vqE"/>
-                                    <constraint firstItem="nfr-Ip-wKQ" firstAttribute="top" secondItem="HcJ-lW-BNF" secondAttribute="top" constant="2" id="CpJ-oW-9pB"/>
-                                    <constraint firstAttribute="centerX" secondItem="Tdh-Z2-Cxu" secondAttribute="trailing" constant="8" id="JJP-Ah-h14"/>
-                                    <constraint firstAttribute="height" constant="320" id="VZp-Ow-ozW"/>
-                                    <constraint firstItem="COU-C7-jck" firstAttribute="leading" secondItem="HcJ-lW-BNF" secondAttribute="centerX" constant="8" id="brM-4n-7Fa"/>
-                                    <constraint firstItem="Tdh-Z2-Cxu" firstAttribute="width" secondItem="COU-C7-jck" secondAttribute="width" id="cN5-xO-jsQ"/>
-                                    <constraint firstAttribute="width" constant="280" id="zfj-pd-3jF"/>
+                                    <constraint firstAttribute="height" constant="360" id="VZp-Ow-ozW"/>
+                                    <constraint firstAttribute="bottom" secondItem="iDm-xC-zwK" secondAttribute="bottom" constant="32" id="Yh4-cC-7B6"/>
+                                    <constraint firstItem="iDm-xC-zwK" firstAttribute="centerX" secondItem="HcJ-lW-BNF" secondAttribute="centerX" id="pN9-Re-nMz"/>
+                                    <constraint firstAttribute="width" constant="320" id="zfj-pd-3jF"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="lowGradientColor">
@@ -795,7 +832,67 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="247" y="1277"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="fRi-Jb-EKl">
+            <objects>
+                <splitViewController showSeguePresentationStyle="single" id="k6N-i4-qck" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem id="lTC-dP-UKI"/>
+                        <splitViewItem id="mrA-Cb-wnc"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="k09-Jk-5yK">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="delegate" destination="k6N-i4-qck" id="Ov3-XI-nBS"/>
+                        </connections>
+                    </splitView>
+                    <connections>
+                        <outlet property="splitView" destination="k09-Jk-5yK" id="eGm-Ca-EGh"/>
+                        <segue destination="qV5-rQ-GCW" kind="relationship" relationship="splitItems" id="VGw-9z-QeT"/>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="splitItems" id="AmV-f6-qfw"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="N17-KH-nqD" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="725"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="d4z-lZ-05B">
+            <objects>
+                <viewController showSeguePresentationStyle="single" id="qV5-rQ-GCW" sceneMemberID="viewController">
+                    <view key="view" misplaced="YES" id="aZ0-q3-NAZ">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="316"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="77C-3H-tMR" customClass="YQGradientView" customModule="EncryptDBUI" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="316"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Shd-Uf-Yjz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lowGradientColor">
+                                        <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highGradientColor">
+                                        <color key="value" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="77C-3H-tMR" firstAttribute="leading" secondItem="aZ0-q3-NAZ" secondAttribute="leading" id="TOA-Ut-2cm"/>
+                            <constraint firstAttribute="trailing" secondItem="77C-3H-tMR" secondAttribute="trailing" id="j09-3z-Z8u"/>
+                            <constraint firstAttribute="bottom" secondItem="77C-3H-tMR" secondAttribute="bottom" id="j4j-W3-UH7"/>
+                            <constraint firstItem="77C-3H-tMR" firstAttribute="top" secondItem="aZ0-q3-NAZ" secondAttribute="top" id="lI1-j7-PE3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="sjE-5u-2BP" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-116" y="1275"/>
         </scene>
     </scenes>
     <resources>
