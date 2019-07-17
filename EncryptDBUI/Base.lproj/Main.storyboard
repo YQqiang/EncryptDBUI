@@ -776,6 +776,9 @@
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                             <font key="font" size="13" name=".PingFangSC-Regular"/>
                                                         </buttonCell>
+                                                        <connections>
+                                                            <action selector="savePwd:" target="XfG-lQ-9wD" id="nvw-2y-94c"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <visibilityPriorities>
@@ -862,8 +865,8 @@
         <!--View Controller-->
         <scene sceneID="d4z-lZ-05B">
             <objects>
-                <viewController showSeguePresentationStyle="single" id="qV5-rQ-GCW" sceneMemberID="viewController">
-                    <view key="view" misplaced="YES" id="aZ0-q3-NAZ">
+                <viewController showSeguePresentationStyle="single" id="qV5-rQ-GCW" customClass="PWDViewController" customModule="EncryptDBUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="aZ0-q3-NAZ">
                         <rect key="frame" x="0.0" y="0.0" width="120" height="316"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>

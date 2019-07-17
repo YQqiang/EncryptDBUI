@@ -30,6 +30,13 @@ class ViewController: NSViewController {
         reloadDefaultData()
     }
     
+    @IBAction func savePwd(_ sender: NSButton) {
+        let pwd = encryptKeyTF.stringValue
+        if pwd.isEmpty {
+            return
+        }
+    }
+    
     @IBAction func encrypt(_ sender: NSButton) {
         guard let model = currentFileModel else {
             return

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F385A9A22DF454500DA3DA0 /* PWDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F385A9922DF454500DA3DA0 /* PWDViewController.swift */; };
 		2FC3DBD920FC309700DD48C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DBD820FC309700DD48C0 /* AppDelegate.swift */; };
 		2FC3DBDB20FC309700DD48C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DBDA20FC309700DD48C0 /* ViewController.swift */; };
 		2FC3DBDD20FC309800DD48C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC3DBDC20FC309800DD48C0 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		0518E26DAC086E739D828D95 /* Pods-EncryptDBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptDBUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EncryptDBUITests/Pods-EncryptDBUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		07CA4EEC354A8FCB11359E05 /* Pods-EncryptDBUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptDBUIUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EncryptDBUIUITests/Pods-EncryptDBUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		0BFD9D64D64FEFDFEFE1B0E4 /* Pods-EncryptDBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptDBUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EncryptDBUITests/Pods-EncryptDBUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F385A9922DF454500DA3DA0 /* PWDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWDViewController.swift; sourceTree = "<group>"; };
 		2FC3DBD520FC309700DD48C0 /* EncryptDBUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncryptDBUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC3DBD820FC309700DD48C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FC3DBDA20FC309700DD48C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				2FC3DBD820FC309700DD48C0 /* AppDelegate.swift */,
 				2FC3DC1520FC357D00DD48C0 /* MainWindow.swift */,
 				2FC3DBDA20FC309700DD48C0 /* ViewController.swift */,
+				2F385A9922DF454500DA3DA0 /* PWDViewController.swift */,
 				2FC3DBDC20FC309800DD48C0 /* Assets.xcassets */,
 				2FC3DBDE20FC309800DD48C0 /* Main.storyboard */,
 				2FC3DBE120FC309800DD48C0 /* Info.plist */,
@@ -438,6 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F385A9A22DF454500DA3DA0 /* PWDViewController.swift in Sources */,
 				2FC3DC1A20FC394E00DD48C0 /* EnumeratorFileProtocol.swift in Sources */,
 				2FC3DC1620FC357D00DD48C0 /* MainWindow.swift in Sources */,
 				2FC3DBDB20FC309700DD48C0 /* ViewController.swift in Sources */,
