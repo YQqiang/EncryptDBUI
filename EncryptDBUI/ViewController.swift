@@ -35,6 +35,15 @@ class ViewController: NSViewController {
         if pwd.isEmpty {
             return
         }
+        
+        let key = "PWDKEY"
+        var values = (UserDefaults.standard.value(forKey: key) as? [String]) ?? []
+        if values.contains(pwd) {
+            return
+        }
+        values.append(pwd)
+        UserDefaults.standard .setValue(values, forKey: key)
+        UserDefaults.standard.synchronize()
     }
     
     @IBAction func encrypt(_ sender: NSButton) {
