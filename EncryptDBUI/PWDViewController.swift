@@ -27,10 +27,17 @@ class PWDViewController: NSViewController {
     @objc fileprivate func updateTableView() {
         dataSource = PWDManager.allPwd()
         tableView.reloadData()
-    }   
+    }
 }
 
 extension PWDViewController: NSTableViewDelegate {
+    func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
+        NotificationCenter.default.post(name: PWDManager.Notification.selectPwd, object: dataSource[row])
+        return true
+    }
+}
+
+extension PWDViewController: NSTableViewDataSource {
     func numberOfRows(in tableView: NSTableView) -> Int {
         return dataSource.count
     }
@@ -44,8 +51,4 @@ extension PWDViewController: NSTableViewDelegate {
     func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
         return 24
     }
-}
-
-extension PWDViewController: NSTableViewDataSource {
-    
 }

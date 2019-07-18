@@ -42,5 +42,6 @@ extension PWDManager {
     struct Notification {
         public static let addPwd = NSNotification.Name(rawValue: "addPwd")
         public static let deletePwd = NSNotification.Name(rawValue: "deletePwd")
+        public static let selectPwd = NSNotification.Name(rawValue: "selectPwd")
     }
 }

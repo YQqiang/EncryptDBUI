@@ -17,12 +17,18 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         dragDropView.delegate = self
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(fillPwd(_:)), name: PWDManager.Notification.selectPwd, object: nil)
     }
 
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
+        }
+    }
+    
+    @objc fileprivate func fillPwd(_ noti: Notification) {
+        if let pwd = noti.object as? String {
+            encryptKeyTF.stringValue = pwd
         }
     }
     
