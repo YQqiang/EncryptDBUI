@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2F385A9A22DF454500DA3DA0 /* PWDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F385A9922DF454500DA3DA0 /* PWDViewController.swift */; };
+		2F59F17F22E0902000DDB55C /* PWDCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59F17E22E0902000DDB55C /* PWDCell.swift */; };
+		2F59F18122E0904600DDB55C /* PWDCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F59F18022E0904600DDB55C /* PWDCell.xib */; };
+		2F59F18322E0A4B400DDB55C /* PWDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59F18222E0A4B400DDB55C /* PWDManager.swift */; };
 		2FC3DBD920FC309700DD48C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DBD820FC309700DD48C0 /* AppDelegate.swift */; };
 		2FC3DBDB20FC309700DD48C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DBDA20FC309700DD48C0 /* ViewController.swift */; };
 		2FC3DBDD20FC309800DD48C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC3DBDC20FC309800DD48C0 /* Assets.xcassets */; };
@@ -49,6 +52,9 @@
 		07CA4EEC354A8FCB11359E05 /* Pods-EncryptDBUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptDBUIUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EncryptDBUIUITests/Pods-EncryptDBUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		0BFD9D64D64FEFDFEFE1B0E4 /* Pods-EncryptDBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptDBUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EncryptDBUITests/Pods-EncryptDBUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2F385A9922DF454500DA3DA0 /* PWDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWDViewController.swift; sourceTree = "<group>"; };
+		2F59F17E22E0902000DDB55C /* PWDCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWDCell.swift; sourceTree = "<group>"; };
+		2F59F18022E0904600DDB55C /* PWDCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PWDCell.xib; sourceTree = "<group>"; };
+		2F59F18222E0A4B400DDB55C /* PWDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWDManager.swift; sourceTree = "<group>"; };
 		2FC3DBD520FC309700DD48C0 /* EncryptDBUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncryptDBUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC3DBD820FC309700DD48C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FC3DBDA20FC309700DD48C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,9 +144,12 @@
 			children = (
 				2FC3DC0420FC319C00DD48C0 /* EncryptFMDB */,
 				2FC3DBD820FC309700DD48C0 /* AppDelegate.swift */,
+				2F59F18222E0A4B400DDB55C /* PWDManager.swift */,
 				2FC3DC1520FC357D00DD48C0 /* MainWindow.swift */,
 				2FC3DBDA20FC309700DD48C0 /* ViewController.swift */,
 				2F385A9922DF454500DA3DA0 /* PWDViewController.swift */,
+				2F59F17E22E0902000DDB55C /* PWDCell.swift */,
+				2F59F18022E0904600DDB55C /* PWDCell.xib */,
 				2FC3DBDC20FC309800DD48C0 /* Assets.xcassets */,
 				2FC3DBDE20FC309800DD48C0 /* Main.storyboard */,
 				2FC3DBE120FC309800DD48C0 /* Info.plist */,
@@ -339,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FC3DBDD20FC309800DD48C0 /* Assets.xcassets in Resources */,
+				2F59F18122E0904600DDB55C /* PWDCell.xib in Resources */,
 				2FC3DBE020FC309800DD48C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +453,7 @@
 			files = (
 				2F385A9A22DF454500DA3DA0 /* PWDViewController.swift in Sources */,
 				2FC3DC1A20FC394E00DD48C0 /* EnumeratorFileProtocol.swift in Sources */,
+				2F59F18322E0A4B400DDB55C /* PWDManager.swift in Sources */,
 				2FC3DC1620FC357D00DD48C0 /* MainWindow.swift in Sources */,
 				2FC3DBDB20FC309700DD48C0 /* ViewController.swift in Sources */,
 				2FC3DC0D20FC319C00DD48C0 /* FMEncryptDatabaseQueue.m in Sources */,
@@ -452,6 +463,7 @@
 				2FC3DC0C20FC319C00DD48C0 /* FMEncryptHelper.m in Sources */,
 				2FC3DC1320FC343000DD48C0 /* YQDragDropView.swift in Sources */,
 				2FC3DC1420FC343000DD48C0 /* YQGradientView.swift in Sources */,
+				2F59F17F22E0902000DDB55C /* PWDCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
