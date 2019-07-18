@@ -19,9 +19,28 @@ class PWDManager {
         values.append(pwd)
         UserDefaults.standard .setValue(values, forKey: key)
         UserDefaults.standard.synchronize()
+        NotificationCenter.default.post(name: PWDManager.Notification.addPwd, object: pwd)
+    }
+    
+    public static func deletePwd(_ pwd: String) {
+        var values = (UserDefaults.standard.value(forKey: key) as? [String]) ?? []
+        if !values.contains(pwd) {
+            return
+        }
+        values.removeAll {$0 == pwd}
+        UserDefaults.standard .setValue(values, forKey: key)
+        UserDefaults.standard.synchronize()
+        NotificationCenter.default.post(name: PWDManager.Notification.deletePwd, object: pwd)
     }
     
     public static func allPwd() -> [String] {
         return (UserDefaults.standard.value(forKey: key) as? [String]) ?? []
+    }
+}
+
+extension PWDManager {
+    struct Notification {
+        public static let addPwd = NSNotification.Name(rawValue: "addPwd")
+        public static let deletePwd = NSNotification.Name(rawValue: "deletePwd")
     }
 }

@@ -21,13 +21,13 @@ class PWDViewController: NSViewController {
         tableView.dataSource = self
         tableView.register(NSNib(nibNamed: NSNib.Name(rawValue: "PWDCell"), bundle: nil)!, forIdentifier: NSUserInterfaceItemIdentifier(rawValue: "PWDCell"))
         updateTableView()
+        NotificationCenter.default.addObserver(self, selector: #selector(updateTableView), name: PWDManager.Notification.addPwd, object: nil)
     }
     
-    fileprivate func updateTableView() {
+    @objc fileprivate func updateTableView() {
         dataSource = PWDManager.allPwd()
         tableView.reloadData()
-    }
-    
+    }   
 }
 
 extension PWDViewController: NSTableViewDelegate {
