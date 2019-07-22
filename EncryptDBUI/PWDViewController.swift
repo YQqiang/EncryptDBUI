@@ -28,6 +28,15 @@ class PWDViewController: NSViewController {
         dataSource = PWDManager.allPwd()
         tableView.reloadData()
     }
+    
+    @IBAction func deletePwdAction(_ sender: NSButton) {
+        let index = tableView.selectedRow
+        if index >= 0, index < PWDManager.allPwd().count {
+            let pwd = PWDManager.allPwd()[index];
+            PWDManager.deletePwd(pwd)
+            updateTableView()
+        }
+    }
 }
 
 extension PWDViewController: NSTableViewDelegate {

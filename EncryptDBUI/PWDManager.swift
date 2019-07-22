@@ -16,7 +16,7 @@ class PWDManager {
         if values.contains(pwd) {
             return
         }
-        values.append(pwd)
+        values.insert(pwd, at: 0)
         UserDefaults.standard .setValue(values, forKey: key)
         UserDefaults.standard.synchronize()
         NotificationCenter.default.post(name: PWDManager.Notification.addPwd, object: pwd)
