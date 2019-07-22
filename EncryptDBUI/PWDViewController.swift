@@ -30,12 +30,21 @@ class PWDViewController: NSViewController {
     }
     
     @IBAction func deletePwdAction(_ sender: NSButton) {
-        let index = tableView.selectedRow
+        var index = tableView.selectedRow
+        if index < 0 {
+            index = 0
+        }
         if index >= 0, index < PWDManager.allPwd().count {
             let pwd = PWDManager.allPwd()[index];
             PWDManager.deletePwd(pwd)
             updateTableView()
         }
+    }
+    
+    @IBAction func deleteAllPwdAction(_ sender: NSButton) {
+        let pwds = PWDManager.allPwd()
+        pwds.forEach({PWDManager.deletePwd($0)})
+        updateTableView()
     }
 }
 

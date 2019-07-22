@@ -874,13 +874,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="120" height="316"/>
                                 <subviews>
                                     <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQb-C5-N5F">
-                                        <rect key="frame" x="0.0" y="40" width="120" height="276"/>
+                                        <rect key="frame" x="0.0" y="66" width="120" height="250"/>
                                         <clipView key="contentView" id="hLe-PA-IBu">
-                                            <rect key="frame" x="1" y="0.0" width="118" height="275"/>
+                                            <rect key="frame" x="1" y="0.0" width="118" height="249"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="hVO-3Q-aJ9" viewBased="YES" id="Mpx-PG-nc2">
-                                                    <rect key="frame" x="0.0" y="0.0" width="118" height="250"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="118" height="224"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -936,25 +936,49 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableHeaderView>
                                     </scrollView>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cwt-IA-P02">
-                                        <rect key="frame" x="13" y="1" width="94" height="32"/>
-                                        <buttonCell key="cell" type="push" title="删除密码" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="To4-6l-89T">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="deletePwdAction:" target="qV5-rQ-GCW" id="K97-Iq-WWA"/>
-                                        </connections>
-                                    </button>
+                                    <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4WC-WY-hli">
+                                        <rect key="frame" x="0.0" y="8" width="120" height="50"/>
+                                        <subviews>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cwt-IA-P02">
+                                                <rect key="frame" x="13" y="22" width="94" height="32"/>
+                                                <buttonCell key="cell" type="push" title="删除密码" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="To4-6l-89T">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="deletePwdAction:" target="qV5-rQ-GCW" id="K97-Iq-WWA"/>
+                                                </connections>
+                                            </button>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1ZO-tK-eZc">
+                                                <rect key="frame" x="13" y="-7" width="94" height="32"/>
+                                                <buttonCell key="cell" type="push" title="全部删除" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iJT-vN-VxZ">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="deleteAllPwdAction:" target="qV5-rQ-GCW" id="CUb-0g-TM2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="bQb-C5-N5F" secondAttribute="trailing" id="0Em-Nv-JBD"/>
-                                    <constraint firstItem="cwt-IA-P02" firstAttribute="centerX" secondItem="77C-3H-tMR" secondAttribute="centerX" id="G2d-FT-hEC"/>
+                                    <constraint firstItem="4WC-WY-hli" firstAttribute="top" secondItem="bQb-C5-N5F" secondAttribute="bottom" constant="8" id="GUS-x9-rjF"/>
+                                    <constraint firstAttribute="trailing" secondItem="4WC-WY-hli" secondAttribute="trailing" id="Q3S-17-dwU"/>
                                     <constraint firstAttribute="width" constant="120" id="Shd-Uf-Yjz"/>
                                     <constraint firstItem="bQb-C5-N5F" firstAttribute="leading" secondItem="77C-3H-tMR" secondAttribute="leading" id="Tt7-JL-wik"/>
                                     <constraint firstItem="bQb-C5-N5F" firstAttribute="top" secondItem="77C-3H-tMR" secondAttribute="top" id="YvU-58-n2c"/>
-                                    <constraint firstAttribute="bottom" secondItem="bQb-C5-N5F" secondAttribute="bottom" constant="40" id="ff2-K7-KUc"/>
-                                    <constraint firstAttribute="bottom" secondItem="cwt-IA-P02" secondAttribute="bottom" constant="8" id="zxr-aQ-FM1"/>
+                                    <constraint firstItem="4WC-WY-hli" firstAttribute="leading" secondItem="77C-3H-tMR" secondAttribute="leading" id="fMg-ke-dq4"/>
+                                    <constraint firstAttribute="bottom" secondItem="4WC-WY-hli" secondAttribute="bottom" constant="8" id="lEU-Lb-5QD"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="lowGradientColor">
