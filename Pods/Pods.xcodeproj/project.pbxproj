@@ -7,515 +7,491 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04AB8A9D7F5DB67A5273D1AC958ADB03 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 95EE30A041B992DDE8FE95CFDA2964A2 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		162B979DEF4E8EA181C1F96DB9B436C7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99D29BA0A1E1884693ED47F1964AC4E /* Cocoa.framework */; };
-		2638EAAFF90E1ADBA0307F00CBC551D7 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2743EDDB7E89CD282D408A4B18547E /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3F9453DF91DC5A41A684BAE2CAF00CFD /* Pods-EncryptDBUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCC89F149516FBB8A45B9413AA448B99 /* Pods-EncryptDBUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		410BFBD8B5AEC53B057A12E6E38A8AFA /* SQLCipher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A429F720D9B85B69D444185DBA905 /* SQLCipher-dummy.m */; };
-		4400CE63EE82FD7A5E28CA903460FA62 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99D29BA0A1E1884693ED47F1964AC4E /* Cocoa.framework */; };
-		45C09C0FF1164624F96A888E8C882986 /* Pods-EncryptDBUIUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F6CCF5E83D1561566689355AB63AE /* Pods-EncryptDBUIUITests-dummy.m */; };
-		5D038A607F66FED68F791F2A42952F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645162FC6FE5AD703676FA70EF52EEF0 /* Foundation.framework */; };
-		629379140926BEEF6B3625D57E52F139 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 258EFD5581B89041E0490DE8A0934191 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		692C09AAD5109F223E73A143F6CFE437 /* SQLCipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9CBD8ECE2C5C26EE060B6594147F37 /* SQLCipher.framework */; };
-		6964F08F15480B5863CC01B55A2A028D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99D29BA0A1E1884693ED47F1964AC4E /* Cocoa.framework */; };
-		6EE20A500FC636D0AE2C5F6307563CC0 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D3F5BE039F1F06DE6556435238C15D /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		708307BFB8FB299A15553D36187F0573 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79415AFF8CC0C3A28EFC5F12317FE362 /* Security.framework */; };
-		7182BC7DD2119DA817812CA8A54E0907 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C99780AAD7294B2F99A8449A55C5E61 /* sqlite3.c */; settings = {COMPILER_FLAGS = "-DNDEBUG -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2 -DSQLITE_SOUNDEX -DSQLITE_THREADSAFE -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_STAT3 -DSQLITE_ENABLE_STAT4 -DSQLITE_ENABLE_COLUMN_METADATA -DSQLITE_ENABLE_MEMORY_MANAGEMENT -DSQLITE_ENABLE_LOAD_EXTENSION -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS4_UNICODE61 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_UNLOCK_NOTIFY -DSQLITE_ENABLE_JSON1 -DSQLITE_ENABLE_FTS5 -DSQLCIPHER_CRYPTO_CC -DHAVE_USLEEP=1 -DSQLITE_MAX_VARIABLE_NUMBER=99999 -fno-objc-arc"; }; };
-		73DF7C2432CFAA6093A09B5A0B66BA8C /* SQLCipher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD2C56BCD1E463CD0DE326535CD72F8 /* SQLCipher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A64B46293240983986C2062108E1B68 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99D29BA0A1E1884693ED47F1964AC4E /* Cocoa.framework */; };
-		7AB4A61AB561BF3648D1134274666F0D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 53352B64480A43ABD2AFF4BCAE899CAB /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9211A294E113945ED4483FD9F2C589D2 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = A0B22B32FEC25032168F28508F05AA31 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9FA7CC76BBEEB6FE707B8F6110D961E8 /* Pods-EncryptDBUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 877A33311F4D77493F5559E814D570B9 /* Pods-EncryptDBUITests-dummy.m */; };
-		A05FDC342FC539DC9AD6D32E8FA1CB3D /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = C8DC0C177D7DD06DCDA4034027947BCE /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB8B086A267863EF971B4E8944FBF3EE /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C88D41F54867ED2DC89620C791A5ED /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		AC562FE3715055CF426A85570B121A6D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99D29BA0A1E1884693ED47F1964AC4E /* Cocoa.framework */; };
-		B1F0D98ED33A2036B6A43CB65FE91E60 /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A1683261CE539BA18C2EC7DCA23DD35 /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4ABE957E3774BCE0AEB0982F182EC27 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 571083CF017CF51754AF906F84D44D93 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B7A54B8A24F44193A4D49BBF38352F8E /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 234BCC95BF2A7E2E538A0F4C05CE1A19 /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBE4D3835A5041D258E2FF3805BB38CA /* Pods-EncryptDBUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A438F0DDA3C02F33D2BB66C401796C /* Pods-EncryptDBUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2FCFD47E32E6433C9191C5A56C0DA23 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 10C51AF452A1B1B25CB9A944C3235B98 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE8C9FF55B50AB999D9DC11E2B0D0796 /* Pods-EncryptDBUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF408E3E52C66726E002A631DE65F87 /* Pods-EncryptDBUI-dummy.m */; };
-		E44F97C8FB885841C3582565F8319933 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9B863DF7706C1AE4A70CB1B3142A67 /* FMDB-dummy.m */; };
-		E6A3A92C3E014712D8365B7D9600AD14 /* Pods-EncryptDBUIUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EBF0B584A2E90E942C3B991046DB310 /* Pods-EncryptDBUIUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF9F40443C15572746E75480496354F1 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F9768AB498D0472EC0CF63926C352AC /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		008F5B829FA0F14E6671FDB8EB1CEDA0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0311248239B5CFD27F15884E204B9D53 /* Cocoa.framework */; };
+		0F80E70EAA6767E3AC6668B0C09F94D7 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D79D47FEEB8B69F8C02D7ECFB9B5C9C /* sqlite3.c */; settings = {COMPILER_FLAGS = "-DNDEBUG -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2 -DSQLITE_SOUNDEX -DSQLITE_THREADSAFE -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_STAT3 -DSQLITE_ENABLE_STAT4 -DSQLITE_ENABLE_COLUMN_METADATA -DSQLITE_ENABLE_MEMORY_MANAGEMENT -DSQLITE_ENABLE_LOAD_EXTENSION -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS4_UNICODE61 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_UNLOCK_NOTIFY -DSQLITE_ENABLE_JSON1 -DSQLITE_ENABLE_FTS5 -DSQLCIPHER_CRYPTO_CC -DHAVE_USLEEP=1 -DSQLITE_MAX_VARIABLE_NUMBER=99999 -fno-objc-arc"; }; };
+		209A24C18F785844353EF8FAF36D0CA6 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB21D90B73FA5E2301A43CD3C210E6 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2A6A9414FB29F4440D1DFE75B58A05B1 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 11FC134A99FBBA770E676142950D12D5 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37215434FFDC90DBEC2159631FA32FAD /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF383283CC3D91897467E0CCC56DE2F /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C471A75ABA08FE3CC95F39C5E13FB71 /* Pods-EncryptDBUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E365CE5F036E35E01B828B58A6DD568 /* Pods-EncryptDBUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C1909B83041530EDD994E24C949CC5 /* Pods-EncryptDBUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 970486EA83996DA7BBAA174F67633842 /* Pods-EncryptDBUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43376FA00530C3E6E312E7BC571D9802 /* Pods-EncryptDBUIUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4236580D19825AD8397D7CE5CE67EC /* Pods-EncryptDBUIUITests-dummy.m */; };
+		487D44ADFA51083C4CBAD55E563F1F71 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5827ACD3291EC3F2A4DB04D99E8AB1 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		57083F5747FD8307A117510EC9C47654 /* SQLCipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF1BECF4BC5EE93E20A9E4D3EAF981E /* SQLCipher.framework */; };
+		5858D40626A42655C30F5C014916F192 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1957401444ABAB8998A05379DBEBA9 /* Foundation.framework */; };
+		605C5348DCD63B86E2D73E17A3BE2A3B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E970A50F85D1703E2E647E9408DF5C /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		672CE3E9FD09D9D4B343EBA687D44B0D /* SQLCipher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F56645EBB3F2C37D0333A5378B0D5155 /* SQLCipher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71D2315E6814E200A2853205497B230E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0311248239B5CFD27F15884E204B9D53 /* Cocoa.framework */; };
+		77ADC960EC6C3C8BC96E51EB2D57D034 /* Pods-EncryptDBUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB34A79750B2901AE5B64D285F911A8 /* Pods-EncryptDBUI-dummy.m */; };
+		7F23DD2C45A8E607FF75238BE7AFD23E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B89A96FD0584C89E8F298CF2C3EA0D81 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		84F69CD3457D199F9CF33F571FB0CEB2 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 336600B24DC939CF6259E828E34BBDD7 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90562001B18C2BD2A9F4BB4D23708AC7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0311248239B5CFD27F15884E204B9D53 /* Cocoa.framework */; };
+		93DFA3376305F59323007BE04B2A4A41 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6854906A13A09AAF81F7A232D94A3B6C /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9FAA4E6FBB3AF824AFA0C3A30038F89A /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = D94E96427DD1F8B136B7760BB983B26C /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0EB6997BEBAB0FC0A291A8CF50A7756 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 383886247AE1374D844A5E4BA5AD8E51 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B04E4D5A31FEB3773FB5B352C3A548A3 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D275B754FF16B028548E0B1302E1E3 /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA816D03267E0EDF0D08244DC00721C6 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = F2411354EE66B0F9FA48B8132FF4190F /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBF781E59A01B16809F575CE19FD5181 /* Pods-EncryptDBUIUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 086EB913D3A0D9C414A17B99F570D3DB /* Pods-EncryptDBUIUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA279A8C767D2701E0740DF93F4EA366 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DFE229E89E0F69EE78CA500E45CE42 /* FMDB-dummy.m */; };
+		CCABC3F23F39577081F976B7FF1C4D23 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0311248239B5CFD27F15884E204B9D53 /* Cocoa.framework */; };
+		D2D5FD698899BEA4D360C5EBB73E6CF8 /* Pods-EncryptDBUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE87409396CDB8595E668B41E38A9C9B /* Pods-EncryptDBUITests-dummy.m */; };
+		D8D2F5BF399B74F66617D5398576CEF9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0311248239B5CFD27F15884E204B9D53 /* Cocoa.framework */; };
+		E87E6544BAFB04195C9FC9A013F1E6F3 /* SQLCipher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4B470C79E6FEF4287DEFE46E3BE2D /* SQLCipher-dummy.m */; };
+		F70621F2026C0F1C4C0A15577BE8A7EF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF116D7A1070425C315CC987D602B6B7 /* Security.framework */; };
+		FD4E0B8A1BC14288AC143ABF8F540B6A /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90799ADA19D97CD8DC3A31B2ABD00907 /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6096FA6A6A7C8A12D4CC9B64B02CB80F /* PBXContainerItemProxy */ = {
+		1E0BE498C9C5B5EF99C3F32306C46152 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 072504B35467A8FB4FE20D0726C1EA90;
+			remoteGlobalIDString = D21962D0DE148A440FADB55935BD4264;
+			remoteInfo = SQLCipher;
+		};
+		A74832C325FA6CA9652F9BCC8B7ABF4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6781C36ABBE84260AD6FB97619F8947B;
 			remoteInfo = "Pods-EncryptDBUI";
 		};
-		66334D8D9D404D04906BF49FDE2398FE /* PBXContainerItemProxy */ = {
+		B2FC6CADB6DDFC868B1CF4A52BFE7071 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5CEFC7F1ADAEA23C8A9613C6D06FE4EA;
+			remoteGlobalIDString = D21962D0DE148A440FADB55935BD4264;
+			remoteInfo = SQLCipher;
+		};
+		B481B642B3179BD16A9545CA5C478F38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8592E0E389D40AC17881400ADC67ABC0;
 			remoteInfo = FMDB;
 		};
-		9D457CEEC6B786C2C92622709CE937E7 /* PBXContainerItemProxy */ = {
+		C1BE4B3A257AD847153F1AE47DF08E84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B6D9F00B0D5DB64256098571755CDB62;
-			remoteInfo = SQLCipher;
-		};
-		B20621FDA4DC11C3A401EAD694F4935B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 072504B35467A8FB4FE20D0726C1EA90;
+			remoteGlobalIDString = 6781C36ABBE84260AD6FB97619F8947B;
 			remoteInfo = "Pods-EncryptDBUI";
-		};
-		EAE64C5D01539721F3C99AF734A53208 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B6D9F00B0D5DB64256098571755CDB62;
-			remoteInfo = SQLCipher;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C9C5315A9BC500470A5C0F174F52BB4 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB.framework; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E62C7DCD3B039CF3584331C31A8FFE1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10C51AF452A1B1B25CB9A944C3235B98 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
-		16DFD26B8F94EECE73A4F94EC7B8470C /* Pods-EncryptDBUIUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EncryptDBUIUITests-frameworks.sh"; sourceTree = "<group>"; };
-		1CE4A7B8CB0FDC03CC06A044410B958D /* Pods_EncryptDBUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EncryptDBUI.framework; path = "Pods-EncryptDBUI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EAEF556C1329A20B58EB8BFB9379C77 /* Pods-EncryptDBUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EncryptDBUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		1EBF0B584A2E90E942C3B991046DB310 /* Pods-EncryptDBUIUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EncryptDBUIUITests-umbrella.h"; sourceTree = "<group>"; };
-		2138043B852D7DBBD70F466404DFF440 /* SQLCipher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLCipher.xcconfig; sourceTree = "<group>"; };
-		234BCC95BF2A7E2E538A0F4C05CE1A19 /* sqlite3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
-		252760916923229E549F391D8B109FF9 /* Pods-EncryptDBUIUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EncryptDBUIUITests-resources.sh"; sourceTree = "<group>"; };
-		258EFD5581B89041E0490DE8A0934191 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		2A1683261CE539BA18C2EC7DCA23DD35 /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
-		2F60EC160E95BC5206B452D9E3CF8298 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F6F6CCF5E83D1561566689355AB63AE /* Pods-EncryptDBUIUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EncryptDBUIUITests-dummy.m"; sourceTree = "<group>"; };
-		3083E43E8E15FDC46AB4A66F476C5AFC /* Pods-EncryptDBUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EncryptDBUI.release.xcconfig"; sourceTree = "<group>"; };
-		320C33DAA7EF0D2953B3C9B54F25BFDF /* Pods-EncryptDBUIUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EncryptDBUIUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		324A429F720D9B85B69D444185DBA905 /* SQLCipher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLCipher-dummy.m"; sourceTree = "<group>"; };
-		37A3E0029F5429EBA5BF9FD824461170 /* Pods-EncryptDBUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EncryptDBUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3D46A95FF5ACE3D70ECCFEBB413F0FD2 /* SQLCipher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-prefix.pch"; sourceTree = "<group>"; };
-		3D4975BF888E5D611FD2E04DDB5AB041 /* Pods-EncryptDBUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EncryptDBUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3F9768AB498D0472EC0CF63926C352AC /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
-		48CE41C5FDAE6DCCDA6E6D1B390332C9 /* Pods-EncryptDBUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EncryptDBUITests-frameworks.sh"; sourceTree = "<group>"; };
-		4C99780AAD7294B2F99A8449A55C5E61 /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sqlite3.c; sourceTree = "<group>"; };
-		4CD6B81E36C57339C50A1C0F8BAC4B3C /* Pods-EncryptDBUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EncryptDBUI.modulemap"; sourceTree = "<group>"; };
-		53352B64480A43ABD2AFF4BCAE899CAB /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		54326897DE6AF0F6833304CDADE3DC7A /* Pods_EncryptDBUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EncryptDBUIUITests.framework; path = "Pods-EncryptDBUIUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		571083CF017CF51754AF906F84D44D93 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
-		61ECF4456D1A97CB8577ABAC4494AF6F /* SQLCipher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLCipher.modulemap; sourceTree = "<group>"; };
-		645162FC6FE5AD703676FA70EF52EEF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		68305793442495C1C333E2B39D9F0BCF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		707341C77F6114D79638DF195B788693 /* Pods-EncryptDBUIUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EncryptDBUIUITests.modulemap"; sourceTree = "<group>"; };
-		7264761D5A2256E23FCE2504034E705C /* Pods-EncryptDBUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EncryptDBUI.debug.xcconfig"; sourceTree = "<group>"; };
-		74E1C17C58D0D1C61D4AED9A453960BE /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
-		7531726E5B6300E99D85C67997FCC498 /* Pods-EncryptDBUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EncryptDBUIUITests.release.xcconfig"; sourceTree = "<group>"; };
-		7603E9BC21A4F9F3F714F8363E53ABC5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79415AFF8CC0C3A28EFC5F12317FE362 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		7B000E4D76DC8A74724B60AD7B0A9945 /* Pods-EncryptDBUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EncryptDBUITests.modulemap"; sourceTree = "<group>"; };
-		7B91A570AB3ECE2C5FB3EDEF0CEC5600 /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FMDB.modulemap; sourceTree = "<group>"; };
-		7D9B863DF7706C1AE4A70CB1B3142A67 /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
-		877A33311F4D77493F5559E814D570B9 /* Pods-EncryptDBUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EncryptDBUITests-dummy.m"; sourceTree = "<group>"; };
-		92C88D41F54867ED2DC89620C791A5ED /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95EE30A041B992DDE8FE95CFDA2964A2 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
-		9AF408E3E52C66726E002A631DE65F87 /* Pods-EncryptDBUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EncryptDBUI-dummy.m"; sourceTree = "<group>"; };
-		9BB67DD5528FB00C5EA13503A0560BC3 /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
-		9D396AF08383FC7A50B91EB6EABAF602 /* Pods-EncryptDBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EncryptDBUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A0A994B2733C067062B684C017B7296A /* Pods-EncryptDBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EncryptDBUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A0B22B32FEC25032168F28508F05AA31 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
-		A99D29BA0A1E1884693ED47F1964AC4E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		AB73D9E904FD00FB6F65F69A5B5CF977 /* Pods-EncryptDBUIUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EncryptDBUIUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		AFC8B713B08C2FB2DF620B5A53F58BAF /* Pods-EncryptDBUI-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EncryptDBUI-resources.sh"; sourceTree = "<group>"; };
-		BBD2C56BCD1E463CD0DE326535CD72F8 /* SQLCipher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-umbrella.h"; sourceTree = "<group>"; };
-		BDC78AB378F31DF9F2251B6DCC56646E /* SQLCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLCipher.framework; path = SQLCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3A438F0DDA3C02F33D2BB66C401796C /* Pods-EncryptDBUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EncryptDBUITests-umbrella.h"; sourceTree = "<group>"; };
-		C8DC0C177D7DD06DCDA4034027947BCE /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
-		D5792DF6833B1A7478C2F410AAE914F2 /* Pods-EncryptDBUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EncryptDBUI-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D762F7185A49C83CBE9680267037640A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD9CBD8ECE2C5C26EE060B6594147F37 /* SQLCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF991527AB34DEE7B084BECD5E819DA2 /* Pods-EncryptDBUI-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EncryptDBUI-frameworks.sh"; sourceTree = "<group>"; };
-		E3D3F5BE039F1F06DE6556435238C15D /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
-		E9C0DDCE0A76FB39DF2F9685064A329D /* Pods_EncryptDBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EncryptDBUITests.framework; path = "Pods-EncryptDBUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F92AA965A4F64B439CC734001654765F /* Pods-EncryptDBUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EncryptDBUI-acknowledgements.plist"; sourceTree = "<group>"; };
-		FA2743EDDB7E89CD282D408A4B18547E /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
-		FBE2CD7248FA3B45A8740C3409FBFB4C /* Pods-EncryptDBUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EncryptDBUITests-resources.sh"; sourceTree = "<group>"; };
-		FCC89F149516FBB8A45B9413AA448B99 /* Pods-EncryptDBUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EncryptDBUI-umbrella.h"; sourceTree = "<group>"; };
+		0311248239B5CFD27F15884E204B9D53 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		086EB913D3A0D9C414A17B99F570D3DB /* Pods-EncryptDBUIUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EncryptDBUIUITests-umbrella.h"; sourceTree = "<group>"; };
+		11FC134A99FBBA770E676142950D12D5 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		129751AE0EFF966C62E604E88A9E34BF /* SQLCipher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SQLCipher-Info.plist"; sourceTree = "<group>"; };
+		13495DF9D80A8BB150130E6DD4277620 /* Pods-EncryptDBUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EncryptDBUITests.modulemap"; sourceTree = "<group>"; };
+		17C2383C1B2249961E404F95D65AE9D2 /* Pods-EncryptDBUIUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EncryptDBUIUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1FD5F5B0E4809A3AE2ECDE142F44A6BB /* SQLCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLCipher.framework; path = SQLCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FF1BECF4BC5EE93E20A9E4D3EAF981E /* SQLCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D275B754FF16B028548E0B1302E1E3 /* sqlite3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		256290B152027E9F6C909D7D2DF90604 /* Pods-EncryptDBUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EncryptDBUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		292D870C2F50363B75F55D58B0D73BD3 /* Pods-EncryptDBUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EncryptDBUITests-Info.plist"; sourceTree = "<group>"; };
+		2EE28B757E976A0D59F3CF669448F836 /* Pods-EncryptDBUIUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EncryptDBUIUITests-Info.plist"; sourceTree = "<group>"; };
+		2FCB21D90B73FA5E2301A43CD3C210E6 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		32C8C46D796E817FDD3CFD6CE3E9CCEF /* Pods-EncryptDBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EncryptDBUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		336600B24DC939CF6259E828E34BBDD7 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		383886247AE1374D844A5E4BA5AD8E51 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		41E9E7AE347D7B4AADD0E78F3A13E318 /* SQLCipher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLCipher.xcconfig; sourceTree = "<group>"; };
+		449901C1FC6FC492EB3D0A02BB684FF4 /* Pods-EncryptDBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EncryptDBUITests.release.xcconfig"; sourceTree = "<group>"; };
+		455249B48EDF09DFE109A9C6181AFC0A /* FMDB-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FMDB-Info.plist"; sourceTree = "<group>"; };
+		45A680F649DA41B355C49C4E5392F5B3 /* Pods_EncryptDBUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EncryptDBUI.framework; path = "Pods-EncryptDBUI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		516D7828B0B09FEA0EA540E321659394 /* Pods-EncryptDBUIUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EncryptDBUIUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5B1A76105BEB168CE870DD393A608F71 /* Pods_EncryptDBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EncryptDBUITests.framework; path = "Pods-EncryptDBUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C31D4E3EFB6FA383D88B25E851E6D47 /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FMDB.modulemap; sourceTree = "<group>"; };
+		5E365CE5F036E35E01B828B58A6DD568 /* Pods-EncryptDBUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EncryptDBUITests-umbrella.h"; sourceTree = "<group>"; };
+		656B64182AFCD3AE4DCE192FF6F701C2 /* Pods-EncryptDBUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EncryptDBUI.release.xcconfig"; sourceTree = "<group>"; };
+		6854906A13A09AAF81F7A232D94A3B6C /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		6BF0FE50E174B8969C5053C5E08F6FB9 /* Pods-EncryptDBUI-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EncryptDBUI-frameworks.sh"; sourceTree = "<group>"; };
+		7D79D47FEEB8B69F8C02D7ECFB9B5C9C /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sqlite3.c; sourceTree = "<group>"; };
+		80DFE229E89E0F69EE78CA500E45CE42 /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
+		8449970CC0AF372CB448DC6C5358EB3E /* Pods-EncryptDBUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EncryptDBUI-acknowledgements.plist"; sourceTree = "<group>"; };
+		85BADF8A62B35AB717FE834272D9BC35 /* Pods-EncryptDBUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EncryptDBUI-Info.plist"; sourceTree = "<group>"; };
+		8CB34A79750B2901AE5B64D285F911A8 /* Pods-EncryptDBUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EncryptDBUI-dummy.m"; sourceTree = "<group>"; };
+		90799ADA19D97CD8DC3A31B2ABD00907 /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
+		90C0E813B8B2B9B73BD841CE3E6CF482 /* SQLCipher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLCipher.modulemap; sourceTree = "<group>"; };
+		970486EA83996DA7BBAA174F67633842 /* Pods-EncryptDBUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EncryptDBUI-umbrella.h"; sourceTree = "<group>"; };
+		973BE3A9A5B373B26FB476048A886871 /* Pods-EncryptDBUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EncryptDBUI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		98D27EC12600906D659E93B6A73AC3A7 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB.framework; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5D50431C081AD3C1BB24870C4F9C9D /* Pods-EncryptDBUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EncryptDBUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ABAA0777730C96B8FF5E9757EF21064F /* SQLCipher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-prefix.pch"; sourceTree = "<group>"; };
+		ACCB30138FCEC0B3C0CA5E7EB59ABF78 /* Pods_EncryptDBUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EncryptDBUIUITests.framework; path = "Pods-EncryptDBUIUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4236580D19825AD8397D7CE5CE67EC /* Pods-EncryptDBUIUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EncryptDBUIUITests-dummy.m"; sourceTree = "<group>"; };
+		AF116D7A1070425C315CC987D602B6B7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		B4E01AF62752186135E86D02152C2E17 /* Pods-EncryptDBUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EncryptDBUI.modulemap"; sourceTree = "<group>"; };
+		B89A96FD0584C89E8F298CF2C3EA0D81 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		BCDE9F0FC739B5FA0766049BC19BFC09 /* Pods-EncryptDBUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EncryptDBUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BD5827ACD3291EC3F2A4DB04D99E8AB1 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		C5A4B470C79E6FEF4287DEFE46E3BE2D /* SQLCipher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLCipher-dummy.m"; sourceTree = "<group>"; };
+		CDF383283CC3D91897467E0CCC56DE2F /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		CE87409396CDB8595E668B41E38A9C9B /* Pods-EncryptDBUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EncryptDBUITests-dummy.m"; sourceTree = "<group>"; };
+		D46D12C09C0B676246FE7251987DC2F0 /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
+		D89BAC60AD598ED03418CF0794243484 /* Pods-EncryptDBUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EncryptDBUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D94E96427DD1F8B136B7760BB983B26C /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		DA1957401444ABAB8998A05379DBEBA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E3E970A50F85D1703E2E647E9408DF5C /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		EB87FCE5E1116D85A02253D37E768076 /* Pods-EncryptDBUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EncryptDBUI.debug.xcconfig"; sourceTree = "<group>"; };
+		F2411354EE66B0F9FA48B8132FF4190F /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		F56645EBB3F2C37D0333A5378B0D5155 /* SQLCipher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-umbrella.h"; sourceTree = "<group>"; };
+		FFF59C9344B6063B90DC51436BCCA1F4 /* Pods-EncryptDBUIUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EncryptDBUIUITests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0D792228D69CEC29256491B6F249A747 /* Frameworks */ = {
+		758F7C75BA5B43FA00B068C346F0CBB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC562FE3715055CF426A85570B121A6D /* Cocoa.framework in Frameworks */,
-				692C09AAD5109F223E73A143F6CFE437 /* SQLCipher.framework in Frameworks */,
+				71D2315E6814E200A2853205497B230E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		401BD7496E14EA7217DD655806834B52 /* Frameworks */ = {
+		8DC11004442454F78A667B453ACAD7ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				162B979DEF4E8EA181C1F96DB9B436C7 /* Cocoa.framework in Frameworks */,
+				90562001B18C2BD2A9F4BB4D23708AC7 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EB9CDC93DC9A21621EF98AC1990FDA4 /* Frameworks */ = {
+		ABC9DA5D7B9A4F64C599A7FCC5A73B27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6964F08F15480B5863CC01B55A2A028D /* Cocoa.framework in Frameworks */,
-				5D038A607F66FED68F791F2A42952F55 /* Foundation.framework in Frameworks */,
-				708307BFB8FB299A15553D36187F0573 /* Security.framework in Frameworks */,
+				D8D2F5BF399B74F66617D5398576CEF9 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5DD91788531BD229CD9CD712FFE483E /* Frameworks */ = {
+		B9D527C559229B7E0D31666FA871E536 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4400CE63EE82FD7A5E28CA903460FA62 /* Cocoa.framework in Frameworks */,
+				008F5B829FA0F14E6671FDB8EB1CEDA0 /* Cocoa.framework in Frameworks */,
+				5858D40626A42655C30F5C014916F192 /* Foundation.framework in Frameworks */,
+				F70621F2026C0F1C4C0A15577BE8A7EF /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBAEED21454ECD243AFABE8A6BBCF40A /* Frameworks */ = {
+		E9028E2115B294AAA2762A458B23667F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A64B46293240983986C2062108E1B68 /* Cocoa.framework in Frameworks */,
+				CCABC3F23F39577081F976B7FF1C4D23 /* Cocoa.framework in Frameworks */,
+				57083F5747FD8307A117510EC9C47654 /* SQLCipher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0055C3363CD53D5676DFE4A5545A9F76 /* Products */ = {
+		2D869F6544C1F46854A8E5FF3EF15DC4 /* SQLCipher */ = {
 			isa = PBXGroup;
 			children = (
-				0C9C5315A9BC500470A5C0F174F52BB4 /* FMDB.framework */,
-				1CE4A7B8CB0FDC03CC06A044410B958D /* Pods_EncryptDBUI.framework */,
-				E9C0DDCE0A76FB39DF2F9685064A329D /* Pods_EncryptDBUITests.framework */,
-				54326897DE6AF0F6833304CDADE3DC7A /* Pods_EncryptDBUIUITests.framework */,
-				BDC78AB378F31DF9F2251B6DCC56646E /* SQLCipher.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		109307481C51B78AA8E0C7B4C5B8D979 /* Pods-EncryptDBUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D762F7185A49C83CBE9680267037640A /* Info.plist */,
-				7B000E4D76DC8A74724B60AD7B0A9945 /* Pods-EncryptDBUITests.modulemap */,
-				3D4975BF888E5D611FD2E04DDB5AB041 /* Pods-EncryptDBUITests-acknowledgements.markdown */,
-				37A3E0029F5429EBA5BF9FD824461170 /* Pods-EncryptDBUITests-acknowledgements.plist */,
-				877A33311F4D77493F5559E814D570B9 /* Pods-EncryptDBUITests-dummy.m */,
-				48CE41C5FDAE6DCCDA6E6D1B390332C9 /* Pods-EncryptDBUITests-frameworks.sh */,
-				FBE2CD7248FA3B45A8740C3409FBFB4C /* Pods-EncryptDBUITests-resources.sh */,
-				C3A438F0DDA3C02F33D2BB66C401796C /* Pods-EncryptDBUITests-umbrella.h */,
-				A0A994B2733C067062B684C017B7296A /* Pods-EncryptDBUITests.debug.xcconfig */,
-				9D396AF08383FC7A50B91EB6EABAF602 /* Pods-EncryptDBUITests.release.xcconfig */,
-			);
-			name = "Pods-EncryptDBUITests";
-			path = "Target Support Files/Pods-EncryptDBUITests";
-			sourceTree = "<group>";
-		};
-		20E5E3C68291D98C5ED09844A4B0EFFD /* SQLCipher */ = {
-			isa = PBXGroup;
-			children = (
-				9CC1E4A8F622F6ACA8D9F8EA14A11D54 /* common */,
-				A3175C586DBE41A4926BA1482AFD16F9 /* Support Files */,
+				CDF383283CC3D91897467E0CCC56DE2F /* FMDatabase.h */,
+				2FCB21D90B73FA5E2301A43CD3C210E6 /* FMDatabase.m */,
+				11FC134A99FBBA770E676142950D12D5 /* FMDatabaseAdditions.h */,
+				B89A96FD0584C89E8F298CF2C3EA0D81 /* FMDatabaseAdditions.m */,
+				F2411354EE66B0F9FA48B8132FF4190F /* FMDatabasePool.h */,
+				6854906A13A09AAF81F7A232D94A3B6C /* FMDatabasePool.m */,
+				383886247AE1374D844A5E4BA5AD8E51 /* FMDatabaseQueue.h */,
+				BD5827ACD3291EC3F2A4DB04D99E8AB1 /* FMDatabaseQueue.m */,
+				336600B24DC939CF6259E828E34BBDD7 /* FMDB.h */,
+				D94E96427DD1F8B136B7760BB983B26C /* FMResultSet.h */,
+				E3E970A50F85D1703E2E647E9408DF5C /* FMResultSet.m */,
 			);
 			name = SQLCipher;
-			path = SQLCipher;
 			sourceTree = "<group>";
 		};
-		2B982B535548D734C9CD2A90427138E1 /* Pods-EncryptDBUI */ = {
+		37EA4F0F3230F0C1A3BD84C4DFDC7C3A /* Pods-EncryptDBUI */ = {
 			isa = PBXGroup;
 			children = (
-				68305793442495C1C333E2B39D9F0BCF /* Info.plist */,
-				4CD6B81E36C57339C50A1C0F8BAC4B3C /* Pods-EncryptDBUI.modulemap */,
-				D5792DF6833B1A7478C2F410AAE914F2 /* Pods-EncryptDBUI-acknowledgements.markdown */,
-				F92AA965A4F64B439CC734001654765F /* Pods-EncryptDBUI-acknowledgements.plist */,
-				9AF408E3E52C66726E002A631DE65F87 /* Pods-EncryptDBUI-dummy.m */,
-				DF991527AB34DEE7B084BECD5E819DA2 /* Pods-EncryptDBUI-frameworks.sh */,
-				AFC8B713B08C2FB2DF620B5A53F58BAF /* Pods-EncryptDBUI-resources.sh */,
-				FCC89F149516FBB8A45B9413AA448B99 /* Pods-EncryptDBUI-umbrella.h */,
-				7264761D5A2256E23FCE2504034E705C /* Pods-EncryptDBUI.debug.xcconfig */,
-				3083E43E8E15FDC46AB4A66F476C5AFC /* Pods-EncryptDBUI.release.xcconfig */,
+				B4E01AF62752186135E86D02152C2E17 /* Pods-EncryptDBUI.modulemap */,
+				973BE3A9A5B373B26FB476048A886871 /* Pods-EncryptDBUI-acknowledgements.markdown */,
+				8449970CC0AF372CB448DC6C5358EB3E /* Pods-EncryptDBUI-acknowledgements.plist */,
+				8CB34A79750B2901AE5B64D285F911A8 /* Pods-EncryptDBUI-dummy.m */,
+				6BF0FE50E174B8969C5053C5E08F6FB9 /* Pods-EncryptDBUI-frameworks.sh */,
+				85BADF8A62B35AB717FE834272D9BC35 /* Pods-EncryptDBUI-Info.plist */,
+				970486EA83996DA7BBAA174F67633842 /* Pods-EncryptDBUI-umbrella.h */,
+				EB87FCE5E1116D85A02253D37E768076 /* Pods-EncryptDBUI.debug.xcconfig */,
+				656B64182AFCD3AE4DCE192FF6F701C2 /* Pods-EncryptDBUI.release.xcconfig */,
 			);
 			name = "Pods-EncryptDBUI";
 			path = "Target Support Files/Pods-EncryptDBUI";
 			sourceTree = "<group>";
 		};
-		303681A865C695CBD1AB288359386856 /* Targets Support Files */ = {
+		5587FC1BAF8018F10EE5777F80770CE5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2B982B535548D734C9CD2A90427138E1 /* Pods-EncryptDBUI */,
-				109307481C51B78AA8E0C7B4C5B8D979 /* Pods-EncryptDBUITests */,
-				434845B4003599B432C853B4E8E2A56E /* Pods-EncryptDBUIUITests */,
+				F752E4BEEA980DBC29F02FDC26EA0BF0 /* FMDB */,
+				7D34138EAD299523977C80CFD56534F4 /* SQLCipher */,
 			);
-			name = "Targets Support Files";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		38BD4490BEA284CD98E0D11CECFCAE7E /* Support Files */ = {
+		5BBD00508881A69180CDF8AEBE1BECCF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B91A570AB3ECE2C5FB3EDEF0CEC5600 /* FMDB.modulemap */,
-				9BB67DD5528FB00C5EA13503A0560BC3 /* FMDB.xcconfig */,
-				7D9B863DF7706C1AE4A70CB1B3142A67 /* FMDB-dummy.m */,
-				74E1C17C58D0D1C61D4AED9A453960BE /* FMDB-prefix.pch */,
-				2A1683261CE539BA18C2EC7DCA23DD35 /* FMDB-umbrella.h */,
-				2F60EC160E95BC5206B452D9E3CF8298 /* Info.plist */,
+				5C31D4E3EFB6FA383D88B25E851E6D47 /* FMDB.modulemap */,
+				D46D12C09C0B676246FE7251987DC2F0 /* FMDB.xcconfig */,
+				80DFE229E89E0F69EE78CA500E45CE42 /* FMDB-dummy.m */,
+				455249B48EDF09DFE109A9C6181AFC0A /* FMDB-Info.plist */,
+				98D27EC12600906D659E93B6A73AC3A7 /* FMDB-prefix.pch */,
+				90799ADA19D97CD8DC3A31B2ABD00907 /* FMDB-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/FMDB";
 			sourceTree = "<group>";
 		};
-		3F74FE6B71DEC435C53BCE8726A8E91E /* Pods */ = {
+		72C2C780C90E069E3D50BCA94774912D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D698C46511DBC162F9185224DA73A121 /* FMDB */,
-				20E5E3C68291D98C5ED09844A4B0EFFD /* SQLCipher */,
+				A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB.framework */,
+				45A680F649DA41B355C49C4E5392F5B3 /* Pods_EncryptDBUI.framework */,
+				5B1A76105BEB168CE870DD393A608F71 /* Pods_EncryptDBUITests.framework */,
+				ACCB30138FCEC0B3C0CA5E7EB59ABF78 /* Pods_EncryptDBUIUITests.framework */,
+				1FD5F5B0E4809A3AE2ECDE142F44A6BB /* SQLCipher.framework */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		434845B4003599B432C853B4E8E2A56E /* Pods-EncryptDBUIUITests */ = {
+		73A63553E39DA259A8D62A8CA3C988DF /* Pods-EncryptDBUIUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0E62C7DCD3B039CF3584331C31A8FFE1 /* Info.plist */,
-				707341C77F6114D79638DF195B788693 /* Pods-EncryptDBUIUITests.modulemap */,
-				320C33DAA7EF0D2953B3C9B54F25BFDF /* Pods-EncryptDBUIUITests-acknowledgements.markdown */,
-				AB73D9E904FD00FB6F65F69A5B5CF977 /* Pods-EncryptDBUIUITests-acknowledgements.plist */,
-				2F6F6CCF5E83D1561566689355AB63AE /* Pods-EncryptDBUIUITests-dummy.m */,
-				16DFD26B8F94EECE73A4F94EC7B8470C /* Pods-EncryptDBUIUITests-frameworks.sh */,
-				252760916923229E549F391D8B109FF9 /* Pods-EncryptDBUIUITests-resources.sh */,
-				1EBF0B584A2E90E942C3B991046DB310 /* Pods-EncryptDBUIUITests-umbrella.h */,
-				1EAEF556C1329A20B58EB8BFB9379C77 /* Pods-EncryptDBUIUITests.debug.xcconfig */,
-				7531726E5B6300E99D85C67997FCC498 /* Pods-EncryptDBUIUITests.release.xcconfig */,
+				FFF59C9344B6063B90DC51436BCCA1F4 /* Pods-EncryptDBUIUITests.modulemap */,
+				516D7828B0B09FEA0EA540E321659394 /* Pods-EncryptDBUIUITests-acknowledgements.markdown */,
+				17C2383C1B2249961E404F95D65AE9D2 /* Pods-EncryptDBUIUITests-acknowledgements.plist */,
+				AE4236580D19825AD8397D7CE5CE67EC /* Pods-EncryptDBUIUITests-dummy.m */,
+				2EE28B757E976A0D59F3CF669448F836 /* Pods-EncryptDBUIUITests-Info.plist */,
+				086EB913D3A0D9C414A17B99F570D3DB /* Pods-EncryptDBUIUITests-umbrella.h */,
+				D89BAC60AD598ED03418CF0794243484 /* Pods-EncryptDBUIUITests.debug.xcconfig */,
+				AA5D50431C081AD3C1BB24870C4F9C9D /* Pods-EncryptDBUIUITests.release.xcconfig */,
 			);
 			name = "Pods-EncryptDBUIUITests";
 			path = "Target Support Files/Pods-EncryptDBUIUITests";
 			sourceTree = "<group>";
 		};
-		628EEA3C372F5353794C8DF9729F7E67 /* Frameworks */ = {
+		7408E6C478A861F92F981FFFB54DD158 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DD9CBD8ECE2C5C26EE060B6594147F37 /* SQLCipher.framework */,
-				BC1D1FC552CCDC2612E61990BBFB624D /* OS X */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				628EEA3C372F5353794C8DF9729F7E67 /* Frameworks */,
-				3F74FE6B71DEC435C53BCE8726A8E91E /* Pods */,
-				0055C3363CD53D5676DFE4A5545A9F76 /* Products */,
-				303681A865C695CBD1AB288359386856 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		9CC1E4A8F622F6ACA8D9F8EA14A11D54 /* common */ = {
-			isa = PBXGroup;
-			children = (
-				4C99780AAD7294B2F99A8449A55C5E61 /* sqlite3.c */,
-				234BCC95BF2A7E2E538A0F4C05CE1A19 /* sqlite3.h */,
-			);
-			name = common;
-			sourceTree = "<group>";
-		};
-		A3175C586DBE41A4926BA1482AFD16F9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7603E9BC21A4F9F3F714F8363E53ABC5 /* Info.plist */,
-				61ECF4456D1A97CB8577ABAC4494AF6F /* SQLCipher.modulemap */,
-				2138043B852D7DBBD70F466404DFF440 /* SQLCipher.xcconfig */,
-				324A429F720D9B85B69D444185DBA905 /* SQLCipher-dummy.m */,
-				3D46A95FF5ACE3D70ECCFEBB413F0FD2 /* SQLCipher-prefix.pch */,
-				BBD2C56BCD1E463CD0DE326535CD72F8 /* SQLCipher-umbrella.h */,
+				90C0E813B8B2B9B73BD841CE3E6CF482 /* SQLCipher.modulemap */,
+				41E9E7AE347D7B4AADD0E78F3A13E318 /* SQLCipher.xcconfig */,
+				C5A4B470C79E6FEF4287DEFE46E3BE2D /* SQLCipher-dummy.m */,
+				129751AE0EFF966C62E604E88A9E34BF /* SQLCipher-Info.plist */,
+				ABAA0777730C96B8FF5E9757EF21064F /* SQLCipher-prefix.pch */,
+				F56645EBB3F2C37D0333A5378B0D5155 /* SQLCipher-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SQLCipher";
 			sourceTree = "<group>";
 		};
-		BC1D1FC552CCDC2612E61990BBFB624D /* OS X */ = {
+		7D34138EAD299523977C80CFD56534F4 /* SQLCipher */ = {
 			isa = PBXGroup;
 			children = (
-				A99D29BA0A1E1884693ED47F1964AC4E /* Cocoa.framework */,
-				645162FC6FE5AD703676FA70EF52EEF0 /* Foundation.framework */,
-				79415AFF8CC0C3A28EFC5F12317FE362 /* Security.framework */,
+				C277EB9F24847D641E625F45DFF0998C /* common */,
+				7408E6C478A861F92F981FFFB54DD158 /* Support Files */,
+			);
+			name = SQLCipher;
+			path = SQLCipher;
+			sourceTree = "<group>";
+		};
+		7E17AF3B9BFD77D5961FD176954A611D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FF1BECF4BC5EE93E20A9E4D3EAF981E /* SQLCipher.framework */,
+				EB3EE2AE8146D9ADB38F8BE0F5954471 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A12F33436B31BB9127EE8A1ED693C08F /* Pods-EncryptDBUITests */ = {
+			isa = PBXGroup;
+			children = (
+				13495DF9D80A8BB150130E6DD4277620 /* Pods-EncryptDBUITests.modulemap */,
+				BCDE9F0FC739B5FA0766049BC19BFC09 /* Pods-EncryptDBUITests-acknowledgements.markdown */,
+				256290B152027E9F6C909D7D2DF90604 /* Pods-EncryptDBUITests-acknowledgements.plist */,
+				CE87409396CDB8595E668B41E38A9C9B /* Pods-EncryptDBUITests-dummy.m */,
+				292D870C2F50363B75F55D58B0D73BD3 /* Pods-EncryptDBUITests-Info.plist */,
+				5E365CE5F036E35E01B828B58A6DD568 /* Pods-EncryptDBUITests-umbrella.h */,
+				32C8C46D796E817FDD3CFD6CE3E9CCEF /* Pods-EncryptDBUITests.debug.xcconfig */,
+				449901C1FC6FC492EB3D0A02BB684FF4 /* Pods-EncryptDBUITests.release.xcconfig */,
+			);
+			name = "Pods-EncryptDBUITests";
+			path = "Target Support Files/Pods-EncryptDBUITests";
+			sourceTree = "<group>";
+		};
+		C277EB9F24847D641E625F45DFF0998C /* common */ = {
+			isa = PBXGroup;
+			children = (
+				7D79D47FEEB8B69F8C02D7ECFB9B5C9C /* sqlite3.c */,
+				22D275B754FF16B028548E0B1302E1E3 /* sqlite3.h */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				7E17AF3B9BFD77D5961FD176954A611D /* Frameworks */,
+				5587FC1BAF8018F10EE5777F80770CE5 /* Pods */,
+				72C2C780C90E069E3D50BCA94774912D /* Products */,
+				F604F484235187E06CF1AE350FD85F7D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		EB3EE2AE8146D9ADB38F8BE0F5954471 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				0311248239B5CFD27F15884E204B9D53 /* Cocoa.framework */,
+				DA1957401444ABAB8998A05379DBEBA9 /* Foundation.framework */,
+				AF116D7A1070425C315CC987D602B6B7 /* Security.framework */,
 			);
 			name = "OS X";
 			sourceTree = "<group>";
 		};
-		D698C46511DBC162F9185224DA73A121 /* FMDB */ = {
+		F604F484235187E06CF1AE350FD85F7D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FFF6EE7642117F28396E0018C0514911 /* SQLCipher */,
-				38BD4490BEA284CD98E0D11CECFCAE7E /* Support Files */,
+				37EA4F0F3230F0C1A3BD84C4DFDC7C3A /* Pods-EncryptDBUI */,
+				A12F33436B31BB9127EE8A1ED693C08F /* Pods-EncryptDBUITests */,
+				73A63553E39DA259A8D62A8CA3C988DF /* Pods-EncryptDBUIUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F752E4BEEA980DBC29F02FDC26EA0BF0 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				2D869F6544C1F46854A8E5FF3EF15DC4 /* SQLCipher */,
+				5BBD00508881A69180CDF8AEBE1BECCF /* Support Files */,
 			);
 			name = FMDB;
 			path = FMDB;
 			sourceTree = "<group>";
 		};
-		FFF6EE7642117F28396E0018C0514911 /* SQLCipher */ = {
-			isa = PBXGroup;
-			children = (
-				3F9768AB498D0472EC0CF63926C352AC /* FMDatabase.h */,
-				E3D3F5BE039F1F06DE6556435238C15D /* FMDatabase.m */,
-				258EFD5581B89041E0490DE8A0934191 /* FMDatabaseAdditions.h */,
-				53352B64480A43ABD2AFF4BCAE899CAB /* FMDatabaseAdditions.m */,
-				10C51AF452A1B1B25CB9A944C3235B98 /* FMDatabasePool.h */,
-				FA2743EDDB7E89CD282D408A4B18547E /* FMDatabasePool.m */,
-				95EE30A041B992DDE8FE95CFDA2964A2 /* FMDatabaseQueue.h */,
-				571083CF017CF51754AF906F84D44D93 /* FMDatabaseQueue.m */,
-				A0B22B32FEC25032168F28508F05AA31 /* FMDB.h */,
-				C8DC0C177D7DD06DCDA4034027947BCE /* FMResultSet.h */,
-				92C88D41F54867ED2DC89620C791A5ED /* FMResultSet.m */,
-			);
-			name = SQLCipher;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		584A58111D502E90C9BC389503EEA0A9 /* Headers */ = {
+		1F8E80724CDA983EFB751A10F9E0614C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBE4D3835A5041D258E2FF3805BB38CA /* Pods-EncryptDBUITests-umbrella.h in Headers */,
+				3C471A75ABA08FE3CC95F39C5E13FB71 /* Pods-EncryptDBUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		653859CB676420C7533A91BBA373F6FC /* Headers */ = {
+		701C41D41D93C990587039803F1B5EDF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6A3A92C3E014712D8365B7D9600AD14 /* Pods-EncryptDBUIUITests-umbrella.h in Headers */,
+				37215434FFDC90DBEC2159631FA32FAD /* FMDatabase.h in Headers */,
+				2A6A9414FB29F4440D1DFE75B58A05B1 /* FMDatabaseAdditions.h in Headers */,
+				BA816D03267E0EDF0D08244DC00721C6 /* FMDatabasePool.h in Headers */,
+				A0EB6997BEBAB0FC0A291A8CF50A7756 /* FMDatabaseQueue.h in Headers */,
+				FD4E0B8A1BC14288AC143ABF8F540B6A /* FMDB-umbrella.h in Headers */,
+				84F69CD3457D199F9CF33F571FB0CEB2 /* FMDB.h in Headers */,
+				9FAA4E6FBB3AF824AFA0C3A30038F89A /* FMResultSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8301FDD854C5946FE6905494F6C475BD /* Headers */ = {
+		8A1BEA0E7EA0DAC9D7639E9B3AA2088F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF9F40443C15572746E75480496354F1 /* FMDatabase.h in Headers */,
-				629379140926BEEF6B3625D57E52F139 /* FMDatabaseAdditions.h in Headers */,
-				D2FCFD47E32E6433C9191C5A56C0DA23 /* FMDatabasePool.h in Headers */,
-				04AB8A9D7F5DB67A5273D1AC958ADB03 /* FMDatabaseQueue.h in Headers */,
-				B1F0D98ED33A2036B6A43CB65FE91E60 /* FMDB-umbrella.h in Headers */,
-				9211A294E113945ED4483FD9F2C589D2 /* FMDB.h in Headers */,
-				A05FDC342FC539DC9AD6D32E8FA1CB3D /* FMResultSet.h in Headers */,
+				672CE3E9FD09D9D4B343EBA687D44B0D /* SQLCipher-umbrella.h in Headers */,
+				B04E4D5A31FEB3773FB5B352C3A548A3 /* sqlite3.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B799964D9A97D1702295188B1A988EE3 /* Headers */ = {
+		9E429E65E3292DE46C13588055D4E521 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73DF7C2432CFAA6093A09B5A0B66BA8C /* SQLCipher-umbrella.h in Headers */,
-				B7A54B8A24F44193A4D49BBF38352F8E /* sqlite3.h in Headers */,
+				BBF781E59A01B16809F575CE19FD5181 /* Pods-EncryptDBUIUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4C77BC3B88D77983ADE6333EE66E11A /* Headers */ = {
+		C1115B92EF507164BAF99661E31E8CA6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F9453DF91DC5A41A684BAE2CAF00CFD /* Pods-EncryptDBUI-umbrella.h in Headers */,
+				40C1909B83041530EDD994E24C949CC5 /* Pods-EncryptDBUI-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		072504B35467A8FB4FE20D0726C1EA90 /* Pods-EncryptDBUI */ = {
+		6781C36ABBE84260AD6FB97619F8947B /* Pods-EncryptDBUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F86DBC82F0D09DAC95629B3FB4F97F4 /* Build configuration list for PBXNativeTarget "Pods-EncryptDBUI" */;
+			buildConfigurationList = D355D648AB4F4FA6F95DEF49ADAC905C /* Build configuration list for PBXNativeTarget "Pods-EncryptDBUI" */;
 			buildPhases = (
-				3A59D9348CAA4D5F2BB0FDE18A675D20 /* Sources */,
-				401BD7496E14EA7217DD655806834B52 /* Frameworks */,
-				F4C77BC3B88D77983ADE6333EE66E11A /* Headers */,
+				C1115B92EF507164BAF99661E31E8CA6 /* Headers */,
+				BC80FA8635360E98839DDA8ACD33FFED /* Sources */,
+				8DC11004442454F78A667B453ACAD7ED /* Frameworks */,
+				DF6BA358A01AC1F2794BBF29D18EEC98 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FD4F3EC9EFA468EB1E6B3E141E0C8663 /* PBXTargetDependency */,
-				51E18CAA06CDD0D61D15FC92119C456F /* PBXTargetDependency */,
+				662B805B59EBD30301FF1B2C988EBC3F /* PBXTargetDependency */,
+				528BFB19456813488E6EA0F78C9E8041 /* PBXTargetDependency */,
 			);
 			name = "Pods-EncryptDBUI";
 			productName = "Pods-EncryptDBUI";
-			productReference = 1CE4A7B8CB0FDC03CC06A044410B958D /* Pods_EncryptDBUI.framework */;
+			productReference = 45A680F649DA41B355C49C4E5392F5B3 /* Pods_EncryptDBUI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1924798701BB7B8347944792A48D0C4C /* Pods-EncryptDBUITests */ = {
+		6E5820D9F9025978667243EE5C2674DC /* Pods-EncryptDBUIUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F0D8E660BF6B270EE4285416D0F3949 /* Build configuration list for PBXNativeTarget "Pods-EncryptDBUITests" */;
+			buildConfigurationList = 520F37F1EC47E257D591DF5276E00CDB /* Build configuration list for PBXNativeTarget "Pods-EncryptDBUIUITests" */;
 			buildPhases = (
-				DC51A7BB6429D237ADFE92EC7D99B72C /* Sources */,
-				C5DD91788531BD229CD9CD712FFE483E /* Frameworks */,
-				584A58111D502E90C9BC389503EEA0A9 /* Headers */,
+				9E429E65E3292DE46C13588055D4E521 /* Headers */,
+				920981AB14EA83FA6878B28DF0C09F4C /* Sources */,
+				758F7C75BA5B43FA00B068C346F0CBB3 /* Frameworks */,
+				C57B9F5CECFBEE2F389424016DC3421E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7B8EEC929C0341529CD4CBC833A858E7 /* PBXTargetDependency */,
-			);
-			name = "Pods-EncryptDBUITests";
-			productName = "Pods-EncryptDBUITests";
-			productReference = E9C0DDCE0A76FB39DF2F9685064A329D /* Pods_EncryptDBUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		20D5C267EB5B7B7CFA62916276524644 /* Pods-EncryptDBUIUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 89C76BB6A2D65F7D9A24E326193A6125 /* Build configuration list for PBXNativeTarget "Pods-EncryptDBUIUITests" */;
-			buildPhases = (
-				9065C43B6C00999FBFED367346A497F0 /* Sources */,
-				DBAEED21454ECD243AFABE8A6BBCF40A /* Frameworks */,
-				653859CB676420C7533A91BBA373F6FC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1CE319FAE03DBB3AD2017D1A84DB5527 /* PBXTargetDependency */,
+				D3CBE8F86E9910F1D817880921081788 /* PBXTargetDependency */,
 			);
 			name = "Pods-EncryptDBUIUITests";
 			productName = "Pods-EncryptDBUIUITests";
-			productReference = 54326897DE6AF0F6833304CDADE3DC7A /* Pods_EncryptDBUIUITests.framework */;
+			productReference = ACCB30138FCEC0B3C0CA5E7EB59ABF78 /* Pods_EncryptDBUIUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5CEFC7F1ADAEA23C8A9613C6D06FE4EA /* FMDB */ = {
+		8592E0E389D40AC17881400ADC67ABC0 /* FMDB */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28422A1AB435F85FE664FA52FB8E0C51 /* Build configuration list for PBXNativeTarget "FMDB" */;
+			buildConfigurationList = 015700E597ACA838D5BE34825A5EA53F /* Build configuration list for PBXNativeTarget "FMDB" */;
 			buildPhases = (
-				4DE853CF78099D68B62508A7C9B55B6F /* Sources */,
-				0D792228D69CEC29256491B6F249A747 /* Frameworks */,
-				8301FDD854C5946FE6905494F6C475BD /* Headers */,
+				701C41D41D93C990587039803F1B5EDF /* Headers */,
+				6298085B1EAED426E85819DC4F456775 /* Sources */,
+				E9028E2115B294AAA2762A458B23667F /* Frameworks */,
+				ACB09DD2A669B687D2669B7238289829 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				06792BC36769998F1084F3A990A62987 /* PBXTargetDependency */,
+				647D37A5D1F6296B5889809D51244462 /* PBXTargetDependency */,
 			);
 			name = FMDB;
 			productName = FMDB;
-			productReference = 0C9C5315A9BC500470A5C0F174F52BB4 /* FMDB.framework */;
+			productReference = A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B6D9F00B0D5DB64256098571755CDB62 /* SQLCipher */ = {
+		D21962D0DE148A440FADB55935BD4264 /* SQLCipher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 758C81C124BEE86C1CDF242B6805F017 /* Build configuration list for PBXNativeTarget "SQLCipher" */;
+			buildConfigurationList = EB3A9C3D821D833ACE83EDB46EE5DAD0 /* Build configuration list for PBXNativeTarget "SQLCipher" */;
 			buildPhases = (
-				3EF73B3D4D554103B1E1E9AFC6506A5E /* Sources */,
-				9EB9CDC93DC9A21621EF98AC1990FDA4 /* Frameworks */,
-				B799964D9A97D1702295188B1A988EE3 /* Headers */,
+				8A1BEA0E7EA0DAC9D7639E9B3AA2088F /* Headers */,
+				FDCF1864862EA06C87CEAFAF86781654 /* Sources */,
+				B9D527C559229B7E0D31666FA871E536 /* Frameworks */,
+				5C37B66687A890544A28708BE415F6AF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -523,127 +499,186 @@
 			);
 			name = SQLCipher;
 			productName = SQLCipher;
-			productReference = BDC78AB378F31DF9F2251B6DCC56646E /* SQLCipher.framework */;
+			productReference = 1FD5F5B0E4809A3AE2ECDE142F44A6BB /* SQLCipher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D29B8769ED9D579653C116F1B0581142 /* Pods-EncryptDBUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFF9D9DA12E72D0117D93ABA6348E3D7 /* Build configuration list for PBXNativeTarget "Pods-EncryptDBUITests" */;
+			buildPhases = (
+				1F8E80724CDA983EFB751A10F9E0614C /* Headers */,
+				B71926E4321A012CAC73075EC6927C61 /* Sources */,
+				ABC9DA5D7B9A4F64C599A7FCC5A73B27 /* Frameworks */,
+				2B7A57481482E149E6D02524F1E35D68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				146D605667853503309949AD22439DD3 /* PBXTargetDependency */,
+			);
+			name = "Pods-EncryptDBUITests";
+			productName = "Pods-EncryptDBUITests";
+			productReference = 5B1A76105BEB168CE870DD393A608F71 /* Pods_EncryptDBUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 0055C3363CD53D5676DFE4A5545A9F76 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 72C2C780C90E069E3D50BCA94774912D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5CEFC7F1ADAEA23C8A9613C6D06FE4EA /* FMDB */,
-				072504B35467A8FB4FE20D0726C1EA90 /* Pods-EncryptDBUI */,
-				1924798701BB7B8347944792A48D0C4C /* Pods-EncryptDBUITests */,
-				20D5C267EB5B7B7CFA62916276524644 /* Pods-EncryptDBUIUITests */,
-				B6D9F00B0D5DB64256098571755CDB62 /* SQLCipher */,
+				8592E0E389D40AC17881400ADC67ABC0 /* FMDB */,
+				6781C36ABBE84260AD6FB97619F8947B /* Pods-EncryptDBUI */,
+				D29B8769ED9D579653C116F1B0581142 /* Pods-EncryptDBUITests */,
+				6E5820D9F9025978667243EE5C2674DC /* Pods-EncryptDBUIUITests */,
+				D21962D0DE148A440FADB55935BD4264 /* SQLCipher */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		2B7A57481482E149E6D02524F1E35D68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C37B66687A890544A28708BE415F6AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB09DD2A669B687D2669B7238289829 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C57B9F5CECFBEE2F389424016DC3421E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6BA358A01AC1F2794BBF29D18EEC98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		3A59D9348CAA4D5F2BB0FDE18A675D20 /* Sources */ = {
+		6298085B1EAED426E85819DC4F456775 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE8C9FF55B50AB999D9DC11E2B0D0796 /* Pods-EncryptDBUI-dummy.m in Sources */,
+				209A24C18F785844353EF8FAF36D0CA6 /* FMDatabase.m in Sources */,
+				7F23DD2C45A8E607FF75238BE7AFD23E /* FMDatabaseAdditions.m in Sources */,
+				93DFA3376305F59323007BE04B2A4A41 /* FMDatabasePool.m in Sources */,
+				487D44ADFA51083C4CBAD55E563F1F71 /* FMDatabaseQueue.m in Sources */,
+				CA279A8C767D2701E0740DF93F4EA366 /* FMDB-dummy.m in Sources */,
+				605C5348DCD63B86E2D73E17A3BE2A3B /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3EF73B3D4D554103B1E1E9AFC6506A5E /* Sources */ = {
+		920981AB14EA83FA6878B28DF0C09F4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				410BFBD8B5AEC53B057A12E6E38A8AFA /* SQLCipher-dummy.m in Sources */,
-				7182BC7DD2119DA817812CA8A54E0907 /* sqlite3.c in Sources */,
+				43376FA00530C3E6E312E7BC571D9802 /* Pods-EncryptDBUIUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DE853CF78099D68B62508A7C9B55B6F /* Sources */ = {
+		B71926E4321A012CAC73075EC6927C61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EE20A500FC636D0AE2C5F6307563CC0 /* FMDatabase.m in Sources */,
-				7AB4A61AB561BF3648D1134274666F0D /* FMDatabaseAdditions.m in Sources */,
-				2638EAAFF90E1ADBA0307F00CBC551D7 /* FMDatabasePool.m in Sources */,
-				B4ABE957E3774BCE0AEB0982F182EC27 /* FMDatabaseQueue.m in Sources */,
-				E44F97C8FB885841C3582565F8319933 /* FMDB-dummy.m in Sources */,
-				AB8B086A267863EF971B4E8944FBF3EE /* FMResultSet.m in Sources */,
+				D2D5FD698899BEA4D360C5EBB73E6CF8 /* Pods-EncryptDBUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9065C43B6C00999FBFED367346A497F0 /* Sources */ = {
+		BC80FA8635360E98839DDA8ACD33FFED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45C09C0FF1164624F96A888E8C882986 /* Pods-EncryptDBUIUITests-dummy.m in Sources */,
+				77ADC960EC6C3C8BC96E51EB2D57D034 /* Pods-EncryptDBUI-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC51A7BB6429D237ADFE92EC7D99B72C /* Sources */ = {
+		FDCF1864862EA06C87CEAFAF86781654 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FA7CC76BBEEB6FE707B8F6110D961E8 /* Pods-EncryptDBUITests-dummy.m in Sources */,
+				E87E6544BAFB04195C9FC9A013F1E6F3 /* SQLCipher-dummy.m in Sources */,
+				0F80E70EAA6767E3AC6668B0C09F94D7 /* sqlite3.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		06792BC36769998F1084F3A990A62987 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SQLCipher;
-			target = B6D9F00B0D5DB64256098571755CDB62 /* SQLCipher */;
-			targetProxy = 9D457CEEC6B786C2C92622709CE937E7 /* PBXContainerItemProxy */;
-		};
-		1CE319FAE03DBB3AD2017D1A84DB5527 /* PBXTargetDependency */ = {
+		146D605667853503309949AD22439DD3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-EncryptDBUI";
-			target = 072504B35467A8FB4FE20D0726C1EA90 /* Pods-EncryptDBUI */;
-			targetProxy = 6096FA6A6A7C8A12D4CC9B64B02CB80F /* PBXContainerItemProxy */;
+			target = 6781C36ABBE84260AD6FB97619F8947B /* Pods-EncryptDBUI */;
+			targetProxy = A74832C325FA6CA9652F9BCC8B7ABF4A /* PBXContainerItemProxy */;
 		};
-		51E18CAA06CDD0D61D15FC92119C456F /* PBXTargetDependency */ = {
+		528BFB19456813488E6EA0F78C9E8041 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SQLCipher;
-			target = B6D9F00B0D5DB64256098571755CDB62 /* SQLCipher */;
-			targetProxy = EAE64C5D01539721F3C99AF734A53208 /* PBXContainerItemProxy */;
+			target = D21962D0DE148A440FADB55935BD4264 /* SQLCipher */;
+			targetProxy = B2FC6CADB6DDFC868B1CF4A52BFE7071 /* PBXContainerItemProxy */;
 		};
-		7B8EEC929C0341529CD4CBC833A858E7 /* PBXTargetDependency */ = {
+		647D37A5D1F6296B5889809D51244462 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-EncryptDBUI";
-			target = 072504B35467A8FB4FE20D0726C1EA90 /* Pods-EncryptDBUI */;
-			targetProxy = B20621FDA4DC11C3A401EAD694F4935B /* PBXContainerItemProxy */;
+			name = SQLCipher;
+			target = D21962D0DE148A440FADB55935BD4264 /* SQLCipher */;
+			targetProxy = 1E0BE498C9C5B5EF99C3F32306C46152 /* PBXContainerItemProxy */;
 		};
-		FD4F3EC9EFA468EB1E6B3E141E0C8663 /* PBXTargetDependency */ = {
+		662B805B59EBD30301FF1B2C988EBC3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FMDB;
-			target = 5CEFC7F1ADAEA23C8A9613C6D06FE4EA /* FMDB */;
-			targetProxy = 66334D8D9D404D04906BF49FDE2398FE /* PBXContainerItemProxy */;
+			target = 8592E0E389D40AC17881400ADC67ABC0 /* FMDB */;
+			targetProxy = B481B642B3179BD16A9545CA5C478F38 /* PBXContainerItemProxy */;
+		};
+		D3CBE8F86E9910F1D817880921081788 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EncryptDBUI";
+			target = 6781C36ABBE84260AD6FB97619F8947B /* Pods-EncryptDBUI */;
+			targetProxy = C1BE4B3A257AD847153F1AE47DF08E84 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		10EE8AC448EA224FCC6301D484BEE71D /* Release */ = {
+		1A97B0C5912BD5BF0133CCE31398F3CB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D396AF08383FC7A50B91EB6EABAF602 /* Pods-EncryptDBUITests.release.xcconfig */;
+			baseConfigurationReference = EB87FCE5E1116D85A02253D37E768076 /* Pods-EncryptDBUI.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -656,7 +691,47 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-EncryptDBUITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-EncryptDBUI/Pods-EncryptDBUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-EncryptDBUI/Pods-EncryptDBUI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2274166BF1C8C7878C56E3966D4C0D6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 449901C1FC6FC492EB3D0A02BB684FF4 /* Pods-EncryptDBUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-EncryptDBUITests/Pods-EncryptDBUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -678,10 +753,91 @@
 			};
 			name = Release;
 		};
-		6862BBDA785E4B98008203148C661542 /* Release */ = {
+		486F2EAE42CFFD25A53FCADA73E264EE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2138043B852D7DBBD70F466404DFF440 /* SQLCipher.xcconfig */;
+			baseConfigurationReference = AA5D50431C081AD3C1BB24870C4F9C9D /* Pods-EncryptDBUIUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-EncryptDBUIUITests/Pods-EncryptDBUIUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-EncryptDBUIUITests/Pods-EncryptDBUIUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		606455CE3A6717AA146041302402528F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 656B64182AFCD3AE4DCE192FF6F701C2 /* Pods-EncryptDBUI.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-EncryptDBUI/Pods-EncryptDBUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-EncryptDBUI/Pods-EncryptDBUI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		76BD04C58873ACFB9E6288C14078FBF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41E9E7AE347D7B4AADD0E78F3A13E318 /* SQLCipher.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -694,7 +850,84 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLCipher/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/SQLCipher/SQLCipher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/SQLCipher/SQLCipher.modulemap";
+				PRODUCT_MODULE_NAME = SQLCipher;
+				PRODUCT_NAME = SQLCipher;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7B5A845332511F7243E56E3897B98BA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C8C46D796E817FDD3CFD6CE3E9CCEF /* Pods-EncryptDBUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-EncryptDBUITests/Pods-EncryptDBUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-EncryptDBUITests/Pods-EncryptDBUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		86936AF0556B242BB61724A159E7E5B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41E9E7AE347D7B4AADD0E78F3A13E318 /* SQLCipher.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLCipher/SQLCipher-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -714,44 +947,7 @@
 			};
 			name = Release;
 		};
-		707BCBFD5693C2C592A0041D278B6B23 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BB67DD5528FB00C5EA13503A0560BC3 /* FMDB.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FMDB/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
-				PRODUCT_MODULE_NAME = FMDB;
-				PRODUCT_NAME = FMDB;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		885072FBE917853E9C621EA32511C1DA /* Debug */ = {
+		9382317ED75CFC741F429FC224405042 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -783,8 +979,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -805,20 +999,24 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		8A7742DA87E991E2FE289673606FF7F7 /* Release */ = {
+		ACD397DCED17285C92F71081BD510AB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7531726E5B6300E99D85C67997FCC498 /* Pods-EncryptDBUIUITests.release.xcconfig */;
+			baseConfigurationReference = D89BAC60AD598ED03418CF0794243484 /* Pods-EncryptDBUIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -831,7 +1029,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-EncryptDBUIUITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-EncryptDBUIUITests/Pods-EncryptDBUIUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -851,90 +1049,13 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		B35D5203CD4546AD5D2A8D3979B247AF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3083E43E8E15FDC46AB4A66F476C5AFC /* Pods-EncryptDBUI.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-EncryptDBUI/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-EncryptDBUI/Pods-EncryptDBUI.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CA3C7A0D43E067911F0BCCAF6744E6FD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7264761D5A2256E23FCE2504034E705C /* Pods-EncryptDBUI.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-EncryptDBUI/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-EncryptDBUI/Pods-EncryptDBUI.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
 			name = Debug;
 		};
-		CEA2726315C20A77F77C9263E4134E2F /* Release */ = {
+		B01CD571EFD2A3F9ED739A2F0B195359 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BB67DD5528FB00C5EA13503A0560BC3 /* FMDB.xcconfig */;
+			baseConfigurationReference = D46D12C09C0B676246FE7251987DC2F0 /* FMDB.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -948,7 +1069,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FMDB/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/FMDB/FMDB-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -968,11 +1089,11 @@
 			};
 			name = Release;
 		};
-		D7C1A6C802F606EDF17DB47B5A6DFEBE /* Debug */ = {
+		CC10B0B3C2F31FA2920EF6DA03A9FC40 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EAEF556C1329A20B58EB8BFB9379C77 /* Pods-EncryptDBUIUITests.debug.xcconfig */;
+			baseConfigurationReference = D46D12C09C0B676246FE7251987DC2F0 /* FMDB.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -985,29 +1106,28 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-EncryptDBUIUITests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/FMDB-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-EncryptDBUIUITests/Pods-EncryptDBUIUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				PRODUCT_MODULE_NAME = FMDB;
+				PRODUCT_NAME = FMDB;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		E574923E2959CFEF4FEBC7B272DBC6AD /* Release */ = {
+		E4DEAC9B52796426D2A37E7074A1738D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1039,8 +1159,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -1059,145 +1177,74 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		E63CD0F41F2B4BB76483A60F94CB9ADE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0A994B2733C067062B684C017B7296A /* Pods-EncryptDBUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-EncryptDBUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-EncryptDBUITests/Pods-EncryptDBUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FE997853D6D544FFCBFC8F23F5A5DF45 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2138043B852D7DBBD70F466404DFF440 /* SQLCipher.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLCipher/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/SQLCipher/SQLCipher.modulemap";
-				PRODUCT_MODULE_NAME = SQLCipher;
-				PRODUCT_NAME = SQLCipher;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28422A1AB435F85FE664FA52FB8E0C51 /* Build configuration list for PBXNativeTarget "FMDB" */ = {
+		015700E597ACA838D5BE34825A5EA53F /* Build configuration list for PBXNativeTarget "FMDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				707BCBFD5693C2C592A0041D278B6B23 /* Debug */,
-				CEA2726315C20A77F77C9263E4134E2F /* Release */,
+				CC10B0B3C2F31FA2920EF6DA03A9FC40 /* Debug */,
+				B01CD571EFD2A3F9ED739A2F0B195359 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				885072FBE917853E9C621EA32511C1DA /* Debug */,
-				E574923E2959CFEF4FEBC7B272DBC6AD /* Release */,
+				9382317ED75CFC741F429FC224405042 /* Debug */,
+				E4DEAC9B52796426D2A37E7074A1738D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F86DBC82F0D09DAC95629B3FB4F97F4 /* Build configuration list for PBXNativeTarget "Pods-EncryptDBUI" */ = {
+		520F37F1EC47E257D591DF5276E00CDB /* Build configuration list for PBXNativeTarget "Pods-EncryptDBUIUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA3C7A0D43E067911F0BCCAF6744E6FD /* Debug */,
-				B35D5203CD4546AD5D2A8D3979B247AF /* Release */,
+				ACD397DCED17285C92F71081BD510AB4 /* Debug */,
+				486F2EAE42CFFD25A53FCADA73E264EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F0D8E660BF6B270EE4285416D0F3949 /* Build configuration list for PBXNativeTarget "Pods-EncryptDBUITests" */ = {
+		D355D648AB4F4FA6F95DEF49ADAC905C /* Build configuration list for PBXNativeTarget "Pods-EncryptDBUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E63CD0F41F2B4BB76483A60F94CB9ADE /* Debug */,
-				10EE8AC448EA224FCC6301D484BEE71D /* Release */,
+				1A97B0C5912BD5BF0133CCE31398F3CB /* Debug */,
+				606455CE3A6717AA146041302402528F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		758C81C124BEE86C1CDF242B6805F017 /* Build configuration list for PBXNativeTarget "SQLCipher" */ = {
+		DFF9D9DA12E72D0117D93ABA6348E3D7 /* Build configuration list for PBXNativeTarget "Pods-EncryptDBUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE997853D6D544FFCBFC8F23F5A5DF45 /* Debug */,
-				6862BBDA785E4B98008203148C661542 /* Release */,
+				7B5A845332511F7243E56E3897B98BA4 /* Debug */,
+				2274166BF1C8C7878C56E3966D4C0D6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		89C76BB6A2D65F7D9A24E326193A6125 /* Build configuration list for PBXNativeTarget "Pods-EncryptDBUIUITests" */ = {
+		EB3A9C3D821D833ACE83EDB46EE5DAD0 /* Build configuration list for PBXNativeTarget "SQLCipher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D7C1A6C802F606EDF17DB47B5A6DFEBE /* Debug */,
-				8A7742DA87E991E2FE289673606FF7F7 /* Release */,
+				76BD04C58873ACFB9E6288C14078FBF0 /* Debug */,
+				86936AF0556B242BB61724A159E7E5B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

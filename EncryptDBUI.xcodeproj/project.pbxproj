@@ -26,6 +26,7 @@
 		2FC3DC1A20FC394E00DD48C0 /* EnumeratorFileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DC1820FC394E00DD48C0 /* EnumeratorFileProtocol.swift */; };
 		2FC3DC1B20FC394E00DD48C0 /* YQFileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3DC1920FC394E00DD48C0 /* YQFileModel.swift */; };
 		486C31E3C33954D3B6186A65 /* Pods_EncryptDBUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B79D410472044C8FE904EF4 /* Pods_EncryptDBUIUITests.framework */; };
+		C7A3958E2407D42B005A702D /* FMDBSQLCipherHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3958D2407D42B005A702D /* FMDBSQLCipherHelper.swift */; };
 		FAD38B1F72B78C16B6DEE946 /* Pods_EncryptDBUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977AA627FC1DC90436FDBDC1 /* Pods_EncryptDBUI.framework */; };
 		FB7B0C118374BDD62E358F6E /* Pods_EncryptDBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B03B39E322E15DEF481562 /* Pods_EncryptDBUITests.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +88,7 @@
 		7B79D410472044C8FE904EF4 /* Pods_EncryptDBUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncryptDBUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		977AA627FC1DC90436FDBDC1 /* Pods_EncryptDBUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncryptDBUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B229A3ADF3984BC31C12F4 /* Pods-EncryptDBUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptDBUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EncryptDBUI/Pods-EncryptDBUI.debug.xcconfig"; sourceTree = "<group>"; };
+		C7A3958D2407D42B005A702D /* FMDBSQLCipherHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDBSQLCipherHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			children = (
 				2FC3DC1720FC392700DD48C0 /* Model */,
 				2FC3DC1020FC340D00DD48C0 /* View */,
+				C7A3958D2407D42B005A702D /* FMDBSQLCipherHelper.swift */,
 				2FC3DC0520FC319C00DD48C0 /* FMEncryptHelper.m */,
 				2FC3DC0620FC319C00DD48C0 /* ColumnPropertyMappingDelegate.h */,
 				2FC3DC0720FC319C00DD48C0 /* FMEncryptDatabaseQueue.m */,
@@ -245,7 +248,7 @@
 				2FC3DBD120FC309700DD48C0 /* Sources */,
 				2FC3DBD220FC309700DD48C0 /* Frameworks */,
 				2FC3DBD320FC309700DD48C0 /* Resources */,
-				FEF0AD14C315B869B78E2C5F /* [CP] Embed Pods Frameworks */,
+				77BEB40963DDDB687E8A6307 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -406,6 +409,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		77BEB40963DDDB687E8A6307 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EncryptDBUI/Pods-EncryptDBUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EncryptDBUI/Pods-EncryptDBUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EncryptDBUI/Pods-EncryptDBUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FC40925872D1F4097A956C00 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,26 +444,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FEF0AD14C315B869B78E2C5F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EncryptDBUI/Pods-EncryptDBUI-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
-				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EncryptDBUI/Pods-EncryptDBUI-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -455,6 +455,7 @@
 				2FC3DC1A20FC394E00DD48C0 /* EnumeratorFileProtocol.swift in Sources */,
 				2F59F18322E0A4B400DDB55C /* PWDManager.swift in Sources */,
 				2FC3DC1620FC357D00DD48C0 /* MainWindow.swift in Sources */,
+				C7A3958E2407D42B005A702D /* FMDBSQLCipherHelper.swift in Sources */,
 				2FC3DBDB20FC309700DD48C0 /* ViewController.swift in Sources */,
 				2FC3DC0D20FC319C00DD48C0 /* FMEncryptDatabaseQueue.m in Sources */,
 				2FC3DBD920FC309700DD48C0 /* AppDelegate.swift in Sources */,

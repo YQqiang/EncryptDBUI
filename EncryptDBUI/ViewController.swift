@@ -48,23 +48,40 @@ class ViewController: NSViewController {
         guard let model = currentFileModel else {
             return
         }
-        let isSuccess = FMEncryptHelper.encryptDatabase(model.filePath, encryptKey: encryptKeyTF.stringValue)
-        if isSuccess {
+//        let isSuccess = FMEncryptHelper.encryptDatabase(model.filePath, encryptKey: encryptKeyTF.stringValue)
+//        if isSuccess {
+//            dragDropView.text = model.fileName + " " + "加密成功"
+//        } else {
+//            dragDropView.text = model.fileName + " " + "加密失败"
+//        }
+        
+        do {
+            try FMDBSQLCipherHelper.encrypt(key: encryptKeyTF.stringValue, path: model.filePath)
             dragDropView.text = model.fileName + " " + "加密成功"
-        } else {
+        } catch {
             dragDropView.text = model.fileName + " " + "加密失败"
+            print("error: \(error)")
         }
+        
     }
     
     @IBAction func decrypt(_ sender: NSButton) {
         guard let model = currentFileModel else {
             return
         }
-        let isSuccess = FMEncryptHelper.unEncryptDatabase(model.filePath, encryptKey: encryptKeyTF.stringValue)
-        if isSuccess {
+//        let isSuccess = FMEncryptHelper.unEncryptDatabase(model.filePath, encryptKey: encryptKeyTF.stringValue)
+//        if isSuccess {
+//            dragDropView.text = model.fileName + " " + "解密成功"
+//        } else {
+//            dragDropView.text = model.fileName + " " + "解密失败"
+//        }
+        
+        do {
+            try FMDBSQLCipherHelper.decrypt(key: encryptKeyTF.stringValue, path: model.filePath)
             dragDropView.text = model.fileName + " " + "解密成功"
-        } else {
+        } catch {
             dragDropView.text = model.fileName + " " + "解密失败"
+            print("error: \(error)")
         }
     }
 }
