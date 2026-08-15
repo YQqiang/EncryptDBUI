@@ -1,3 +1,5 @@
+
+
 # EncryptDBUI
 ![](http://yuqiangcoder.com/assets/postImages/ios/201807/1.svg)
 
@@ -18,9 +20,9 @@
 ![应用程序界面](http://yuqiangcoder.com/assets/postImages/ios/201807/2.png)
 
 * 可点击右上角`清空重选`按钮进行清空已选的数据库,重新选择数据库文件
+* 加解密操作默认直接覆盖原文件，建议操作前务必备份重要数据。
 
 ### 拓展
 [sqlcipherDemo](https://github.com/zhengbomo/sqlcipherDemo)
 
 [命令行加解密数据库](https://www.zetetic.net/sqlcipher/sqlcipher-api/#sqlcipher_export)
-
